@@ -3,8 +3,10 @@
 A browser extension that adds a download button to Skool (`skool.com`) classroom pages to easily download videos for convenient offline viewing.
 
 1. 🔗 Get it [here](https://serp.ly/skool-video-downloader-extension)
-3. 🐛 Report bugs [here](https://github.com/serpapps/skool-video-downloader/issues)
-2. 🗨️ Ask questions [here](https://serp.ly/@serp/community)
+2. 🆘 Solve common issues [here](https://github.com/orgs/serpapps/discussions)
+3. 🗨️ Ask questions [here](https://serp.ly/@serp/community)
+4. 🐛 Report bugs [here](https://github.com/serpapps/skool-video-downloader/issues)
+
 
 ---
 
