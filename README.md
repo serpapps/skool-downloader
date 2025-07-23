@@ -2,11 +2,11 @@
 
 A browser extension that adds a download button to Skool (`skool.com`) classroom pages to easily download videos for convenient offline viewing.
 
-1. 🔗 Get it [here](https://serp.ly/skool-video-downloader-extension)
-2. 🆘 Solve common issues [here](https://github.com/orgs/serpapps/discussions)
-3. 🗨️ Ask questions [here](https://serp.ly/@serp/community)
-4. 🐛 Report bugs [here](https://github.com/serpapps/skool-video-downloader/issues)
-
+- 🎁 Get it [here](https://serp.ly/skool-video-downloader-extension)
+- 🆘 Get help [here](https://serp.ly/@serp/community)
+- ❓ Check FAQs [here](https://github.com/orgs/serpapps/discussions/categories/faq)
+- 🐛 Report bugs [here](https://github.com/serpapps/skool-downloader/issues)
+- 🆕 Request features [here](https://github.com/serpapps/skool-downloader/issues)
 
 ---
 
@@ -18,11 +18,15 @@ A browser extension that adds a download button to Skool (`skool.com`) classroom
 - Floating download button
 - 1-on-1 support via our community
 
+---
+
 ## Screenshots
 
 <img src="https://github.com/user-attachments/assets/cbff81f6-e77e-47bb-9a35-1d7adf69e442" alt="skool video downloader 1" width="800" />
 <br>
 <img src="https://github.com/user-attachments/assets/95e890f1-4f80-4fdd-ab44-b412c9c6ace6" alt="skool video downloader 1" width="800" />
+
+---
 
 ## Videos
 
@@ -97,3 +101,12 @@ Skool is an online community platform that combines discussion forums, online co
 However, like many course platforms, they don't provide a way to download the videos that you (the actual users) pay for access to - or even offer an offline viewing option.
 
 So we created a way for you to download your skool.com classroom videos even if you're not technically inclined.
+
+---
+
+## 🔗 Links
+
+- 💬 [SERP University - Community](https://serp.ly/@serp/community)
+- 💌 [Newsletter](https://serp.ly/@serp/email)
+- 🛒 [Shop](https://serp.ly/@serp/store)
+- 🎓 [Courses](https://serp.ly/@serp/courses)
