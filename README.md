@@ -2,15 +2,29 @@
 
 A browser extension that adds a download button to Skool (`skool.com`) classroom pages to easily download videos for convenient offline viewing.
 
+- Save entire school classrooms and course content for unlimited offline access anytime, anywhere
+- Protect your educational investment by downloading all materials before courses expire or disappear
+- Create a personal library of video lectures, assignments, and resources that you own forever
+- Never lose access to paid courses again - backup everything before platforms shut down or remove content
+
+
+## 🔗 Links
+
 - 🎁 Get it [here](https://serp.ly/skool-video-downloader-extension)
 - ❓ Check FAQs [here](https://github.com/orgs/serpapps/discussions/categories/faq)
 - 🆘 Ask questions [here](https://serp.ly/@serp/community)
 - 🐛 Report bugs [here](https://github.com/serpapps/skool-downloader/issues)
 - 🆕 Request features [here](https://github.com/serpapps/skool-downloader/issues)
 
----
+### Resources
 
-## Features
+- 💬 [SERP University - Community](https://serp.ly/@serp/community)
+- 💌 [Newsletter](https://serp.ly/@serp/email)
+- 🛒 [Shop](https://serp.ly/@serp/store)
+- 🎓 [Courses](https://serp.ly/@serp/courses)
+
+
+## Technical features
 
 - One-click download from any video page
 - 100% privacy-friendly – no tracking or data collection
@@ -103,10 +117,3 @@ However, like many course platforms, they don't provide a way to download the vi
 So we created a way for you to download your skool.com classroom videos even if you're not technically inclined.
 
 ---
-
-## 🔗 Links
-
-- 💬 [SERP University - Community](https://serp.ly/@serp/community)
-- 💌 [Newsletter](https://serp.ly/@serp/email)
-- 🛒 [Shop](https://serp.ly/@serp/store)
-- 🎓 [Courses](https://serp.ly/@serp/courses)
