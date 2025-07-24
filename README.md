@@ -7,6 +7,8 @@ A browser extension that adds a download button to Skool (`skool.com`) classroom
 - Create a personal library of video lectures, assignments, and resources that you own forever
 - Never lose access to paid courses again - backup everything before platforms shut down or remove content
 
+![skool-downloader](https://github.com/user-attachments/assets/0b750532-0dd0-4768-a8c4-489b4e92c1c6)
+
 
 ## 🔗 Links
 
