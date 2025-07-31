@@ -9,22 +9,19 @@ A browser extension that adds a download button to Skool (`skool.com`) classroom
 
 ![skool-downloader](https://github.com/user-attachments/assets/0b750532-0dd0-4768-a8c4-489b4e92c1c6)
 
-
 ## 🔗 Links
 
 - 🎁 Get it [here](https://serp.ly/skool-video-downloader-extension)
 - ❓ Check FAQs [here](https://github.com/orgs/serpapps/discussions/categories/faq)
-- 🆘 Ask questions [here](https://serp.ly/@serp/community)
 - 🐛 Report bugs [here](https://github.com/serpapps/skool-downloader/issues)
 - 🆕 Request features [here](https://github.com/serpapps/skool-downloader/issues)
 
 ### Resources
 
-- 💬 [SERP University - Community](https://serp.ly/@serp/community)
+- 💬 [Community](https://serp.ly/@serp/community)
 - 💌 [Newsletter](https://serp.ly/@serp/email)
 - 🛒 [Shop](https://serp.ly/@serp/store)
 - 🎓 [Courses](https://serp.ly/@serp/courses)
-
 
 ## Technical features
 
