@@ -23,7 +23,17 @@ A browser extension that adds a download button to Skool (`skool.com`) classroom
 - 🛒 [Shop](https://serp.ly/@serp/store)
 - 🎓 [Courses](https://serp.ly/@serp/courses)
 
-## Technical features
+## Table of Contents
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Videos](#videos)
+- [Installation Instructions](#installation-instructions)
+  - [How to install \& setup (MAC)](#how-to-install--setup-mac)
+  - [How to use (MAC)](#how-to-use-mac)
+- [How to install \& setup (Windows)](#how-to-install--setup-windows)
+- [How to use (Windows)](#how-to-use-windows)
+
+## Features
 
 - One-click download from any video page
 - 100% privacy-friendly – no tracking or data collection
