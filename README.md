@@ -117,12 +117,12 @@ A browser extension that adds a download button to Skool (`skool.com`) classroom
 
 ---
 
-## More about Skool
+<details>
+  <summary>More about Skool</summary>
+</details> 
 
 Skool is an online community platform that combines discussion forums, online courses, and private groups into one simple, distraction-free space designed for creators, educators, and entrepreneurs who want to build engaged communities, deliver content, and grow their businesses—all.
 
 However, like many course platforms, they don't provide a way to download the videos that you (the actual users) pay for access to - or even offer an offline viewing option.
 
 So we created a way for you to download your skool.com classroom videos even if you're not technically inclined.
-
----
