@@ -69,15 +69,16 @@ A browser extension that adds a download button to Skool (`skool.com`) classroom
 
 ### How to install & setup (MAC)
 
-1. [Download and install the serp-dlp.pkg](https://raw.githubusercontent.com/devinschumacher/extension-skool-video-downloader/main/serp-dlp.pkg)
-2. Double click the `serp-dlp.pkg` on your computer to install it
-3. Download the skool downloader extension
-4. Double click the `skool-video-downloader.zip` file on your computer to unzip it
-5. Save the license key (you'll need it later)
-6. Paste this in the chrome browser bar: `chrome://extensions/`
-7. Enable "developer mode" by clicking the toggle switch on the top right
-8. Install the 'skool downloader extension' by clicking "Load unpacked" and choosing the 'skool downloader extension' folder on your computer (the FOLDER, not the .zip)
-9. Pin the extension to chrome by clicking the puzzle looking icon thing and then the 'pin' icon
+1. "Star ⭐" this repository <a href="https://public-files.gumroad.com/fgqglcvq4v0u32yc0x0jvsllk4x6" target="_blank">click the button that looks like this</a>
+2. [Download and install the serp-dlp.pkg](https://raw.githubusercontent.com/devinschumacher/extension-skool-video-downloader/main/serp-dlp.pkg)
+3. Double click the `serp-dlp.pkg` on your computer to install it
+4. Download the skool downloader extension
+5. Double click the `skool-video-downloader.zip` file on your computer to unzip it
+6. Save the license key (you'll need it later)
+7. Paste this in the chrome browser bar: `chrome://extensions/`
+8. Enable "developer mode" by clicking the toggle switch on the top right
+9. Install the 'skool downloader extension' by clicking "Load unpacked" and choosing the 'skool downloader extension' folder on your computer (the FOLDER, not the .zip)
+10. Pin the extension to chrome by clicking the puzzle looking icon thing and then the 'pin' icon
 
 ### How to use (MAC)
 
@@ -93,13 +94,14 @@ A browser extension that adds a download button to Skool (`skool.com`) classroom
 
 ## How to install & setup (Windows)
 
-1. [Download and install the yt-dlp.exe program here](https://github.com/yt-dlp/yt-dlp/releases/download/2025.06.30/yt-dlp_x86.exe)
-2. Download the skool downloader extension from the [releases area](https://github.com/serpapps/skool-downloader/releases) of this repository (its the .zip file thingy)
-3. Double click the `skool-video-downloader.zip` file on your computer to unzip it
-4. Paste this in the chrome browser bar: `chrome://extensions/`
-5. Enable "developer mode" by clicking the toggle switch on the top right
-6. Install the 'skool downloader extension' by clicking "Load unpacked" and choosing the 'skool downloader extension' folder on your computer (the FOLDER, not the .zip)
-7. Pin the extension to chrome by clicking the puzzle looking icon thing and then the 'pin' icon
+1. "Star ⭐" this repository <a href="https://public-files.gumroad.com/fgqglcvq4v0u32yc0x0jvsllk4x6" target="_blank">click the button that looks like this</a>
+2. [Download and install the yt-dlp.exe program here](https://github.com/yt-dlp/yt-dlp/releases/download/2025.06.30/yt-dlp_x86.exe)
+3. Download the skool downloader extension from the [releases area](https://github.com/serpapps/skool-downloader/releases) of this repository (its the .zip file thingy)
+4. Double click the `skool-video-downloader.zip` file on your computer to unzip it
+5. Paste this in the chrome browser bar: `chrome://extensions/`
+6. Enable "developer mode" by clicking the toggle switch on the top right
+7. Install the 'skool downloader extension' by clicking "Load unpacked" and choosing the 'skool downloader extension' folder on your computer (the FOLDER, not the .zip)
+8. Pin the extension to chrome by clicking the puzzle looking icon thing and then the 'pin' icon
 
 ## How to use (Windows)
 
