@@ -94,13 +94,12 @@ A browser extension that adds a download button to Skool (`skool.com`) classroom
 ## How to install & setup (Windows)
 
 1. [Download and install the yt-dlp.exe program here](https://github.com/yt-dlp/yt-dlp/releases/download/2025.06.30/yt-dlp_x86.exe)
-2. Download the skool downloader extension
-4. Double click the `skool-video-downloader.zip` file on your computer to unzip it
-5. Save the license key (you'll need it later)
-6. Paste this in the chrome browser bar: `chrome://extensions/`
-7. Enable "developer mode" by clicking the toggle switch on the top right
-8. Install the 'skool downloader extension' by clicking "Load unpacked" and choosing the 'skool downloader extension' folder on your computer (the FOLDER, not the .zip)
-9. Pin the extension to chrome by clicking the puzzle looking icon thing and then the 'pin' icon
+2. Download the skool downloader extension from the [releases area](https://github.com/serpapps/skool-downloader/releases) of this repository (its the .zip file thingy)
+3. Double click the `skool-video-downloader.zip` file on your computer to unzip it
+4. Paste this in the chrome browser bar: `chrome://extensions/`
+5. Enable "developer mode" by clicking the toggle switch on the top right
+6. Install the 'skool downloader extension' by clicking "Load unpacked" and choosing the 'skool downloader extension' folder on your computer (the FOLDER, not the .zip)
+7. Pin the extension to chrome by clicking the puzzle looking icon thing and then the 'pin' icon
 
 ## How to use (Windows)
 
