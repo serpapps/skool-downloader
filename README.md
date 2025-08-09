@@ -37,15 +37,21 @@ A browser extension that adds a download button to Skool (`skool.com`) classroom
 - Floating download button
 - 1-on-1 support via our community
 
----
+
 
 ## Screenshots
 
-<img src="https://github.com/user-attachments/assets/cbff81f6-e77e-47bb-9a35-1d7adf69e442" alt="skool video downloader 1" width="800" />
-<br>
-<img src="https://github.com/user-attachments/assets/95e890f1-4f80-4fdd-ab44-b412c9c6ace6" alt="skool video downloader 1" width="800" />
+<img width="600" alt="skool video downloader 1" src="https://github.com/user-attachments/assets/ebf39f38-8331-42d9-a652-02a7af804b56" />
 
 ---
+
+<img width="600" alt="skool video downloader 2" src="https://github.com/user-attachments/assets/14211553-216e-47b5-8c20-3cb3c962d10d" />
+
+---
+
+<img width="600" alt="skool video downloader 3" src="https://github.com/user-attachments/assets/e5054dce-6e6f-484c-81bd-09fbb78ecbf6" />
+
+
 
 ## Videos
 
