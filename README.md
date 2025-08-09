@@ -28,10 +28,6 @@ A browser extension that adds a download button to Skool (`skool.com`) classroom
 - [Screenshots](#screenshots)
 - [Videos](#videos)
 - [Installation Instructions](#installation-instructions)
-  - [How to install \& setup (MAC)](#how-to-install--setup-mac)
-  - [How to use (MAC)](#how-to-use-mac)
-- [How to install \& setup (Windows)](#how-to-install--setup-windows)
-- [How to use (Windows)](#how-to-use-windows)
 
 ## Features
 
@@ -53,6 +49,8 @@ A browser extension that adds a download button to Skool (`skool.com`) classroom
 
 ## Videos
 
+
+
 <a href="https://www.youtube.com/watch?v=WRSzeFI_Q7g" target="_blank">
 <img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/easily-download-skool-videos-free-chrome-extension-1752429029672.jpg" width="700px">
 </a>
@@ -63,7 +61,33 @@ A browser extension that adds a download button to Skool (`skool.com`) classroom
 <img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/how-to-download-skoolcom-videos-browser-extension.jpg" width="700px">
 </a>
 
----
+<br><br>
+<a href="https://www.youtube.com/watch?v=YBBSkdb1YAw" target="_blank">
+<img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/how-to-download-skoolcom-course-videos-loom-vimeo-wistia-youtube-community-posts.jpg" width="700px">
+</a>
+
+
+## [2.0.0] - 2025-08-09
+
+### Added
+- Support for downloading videos across all Skool.com page types
+- Multi-platform video support for major video hosting services
+- Enhanced compatibility with various video formats
+
+### Supported Platforms & Pages
+
+| Page Type | Wistia | Loom | Vimeo | YouTube |
+|-----------|--------|------|-------|---------|
+| Classrooms | ✅ | ✅ | ✅ | ✅ |
+| Community Posts | ✅ | ✅ | ✅ | ✅ |
+| About Pages | ✅ | ✅ | ✅ | ✅ |
+
+### What's New
+- **Universal Page Support**: Download videos from classrooms, community posts, and about pages
+- **Multi-Platform Compatibility**: Full support for Wistia, Loom, Vimeo, and YouTube videos
+- **Enhanced Detection**: Improved video detection across all supported platforms
+- **Streamlined Experience**: Consistent download functionality regardless of page type or video platform
+
 
 ## Installation Instructions
 
@@ -72,6 +96,20 @@ Each release now has its own specific installation instructions to make it easie
 You can find the installation instructions for the specific version in the release: 
 
 - https://github.com/serpapps/skool-downloader/releases
+
+
+### How to Use
+
+1. Visit the skool.com page where you want to download the video ('refresh' the page if needed)
+2. Click the extension icon in your browser
+3. Wait a second or two for the video to load (Click the video on the page if needed) 
+4. Click "Download video"
+
+# Follow along installation & setup 👇
+
+<a href="https://www.youtube.com/watch?v=YBBSkdb1YAw" target="_blank">
+<img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/how-to-download-skoolcom-course-videos-loom-vimeo-wistia-youtube-community-posts.jpg" width="700px">
+</a>
 
 ---
 
