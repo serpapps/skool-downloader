@@ -17,6 +17,9 @@
 | Community Posts | ✅ | ✅ | ✅ | ✅ | ✅ |
 | About Pages | ✅ | ✅ | ✅ | ✅ | ✅ |
 
+### Technical Notes
+- **Maximum video download size**: HLS streams limited to 1500 segments (approximately 1.5 hours) on Vimeo and Skool Native platforms
+
 ## [2.0.0] - 2025-08-09
 
 ### Added
