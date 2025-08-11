@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## [2.1.0] - 2025-08-11
+
+### Added
+- Support for downloading native Skool embedded videos
+- Enhanced video detection for Skool's native video player
+
+### What's New
+- **Native Skool Video Support**: Download videos directly embedded in Skool platform without third-party hosting
+- **Improved Compatibility**: Extended support beyond third-party platforms to include Skool's own video player
+
 ## [2.0.0] - 2025-08-09
 
 ### Added
