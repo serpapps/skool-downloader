@@ -1,0 +1,50 @@
+name: call Comment on Gist
+
+on:
+  workflow_dispatch:
+    inputs:
+      gist_id:
+        description: 'The ID of the gist to comment on'
+        required: true
+        type: string
+      content_source:
+        description: 'Source of comment content'
+        required: true
+        type: choice
+        options:
+          - file
+          - release
+          - issue
+          - direct
+      file_path:
+        description: 'Path to file (when content_source is file)'
+        required: false
+        type: string
+      release_tag:
+        description: 'Release tag (when content_source is release)'
+        required: false
+        type: string
+      issue_number:
+        description: 'Issue number (when content_source is issue)'
+        required: false
+        type: string
+      comment_text:
+        description: 'Direct comment text (when content_source is direct)'
+        required: false
+        type: string
+      github_token:
+        description: 'GitHub PAT with gist write access'
+        required: true
+        type: string
+
+jobs:
+  comment:
+    uses: serpuniversity/.github/.github/workflows/comment-on-gist.yml@main
+    with:
+      gist_id: ${{ github.event.inputs.gist_id }}
+      content_source: ${{ github.event.inputs.content_source }}
+      file_path: ${{ github.event.inputs.file_path }}
+      release_tag: ${{ github.event.inputs.release_tag }}
+      issue_number: ${{ github.event.inputs.issue_number }}
+      comment_text: ${{ github.event.inputs.comment_text }}
+      github_token: ${{ github.event.inputs.github_token }}
