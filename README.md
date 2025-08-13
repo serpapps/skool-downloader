@@ -1,3 +1,7 @@
+---
+title: Skool Video Downloader | How to Download Skool Videos for Offline Viewing
+---
+
 # Skool Video Downloader (Browser Extension)
 
 A browser extension that adds a download button to Skool (`skool.com`) classroom pages to easily download videos for convenient offline viewing.
