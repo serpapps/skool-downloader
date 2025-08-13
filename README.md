@@ -41,15 +41,15 @@ A browser extension that adds a download button to Skool (`skool.com`) classroom
 
 ## Screenshots
 
-<img width="600" alt="skool video downloader 1" src="https://github.com/user-attachments/assets/ebf39f38-8331-42d9-a652-02a7af804b56" />
+<img width="600" alt="skool video downloader 1" src="https://github-production-user-asset-6210df.s3.amazonaws.com/45643901/476263189-ebf39f38-8331-42d9-a652-02a7af804b56.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250813%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250813T000746Z&X-Amz-Expires=300&X-Amz-Signature=f0969db3e1cd328f54d307e0a753e76cfc0dadcc0389d1b8471e9d96c51eff09&X-Amz-SignedHeaders=host" />
 
 ---
 
-<img width="600" alt="skool video downloader 2" src="https://github.com/user-attachments/assets/14211553-216e-47b5-8c20-3cb3c962d10d" />
+<img width="600" alt="skool video downloader 2" src="https://github-production-user-asset-6210df.s3.amazonaws.com/45643901/476263193-14211553-216e-47b5-8c20-3cb3c962d10d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250813%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250813T000753Z&X-Amz-Expires=300&X-Amz-Signature=cc148845f862bb52cd2598f1c38116a1b8eee70fad693dee5051658ccae19ac9&X-Amz-SignedHeaders=host" />
 
 ---
 
-<img width="600" alt="skool video downloader 3" src="https://github.com/user-attachments/assets/e5054dce-6e6f-484c-81bd-09fbb78ecbf6" />
+<img width="600" alt="skool video downloader 3" src="https://github-production-user-asset-6210df.s3.amazonaws.com/45643901/476263257-e5054dce-6e6f-484c-81bd-09fbb78ecbf6.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250813%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250813T000759Z&X-Amz-Expires=300&X-Amz-Signature=25fd87a78b7cbc8d17f0c5cf71ae7e5a5e9dfe69325bdac560138b00403c57b5&X-Amz-SignedHeaders=host" />
 
 
 
