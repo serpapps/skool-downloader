@@ -1,0 +1,22 @@
+name: call Update Gist
+
+on:
+  workflow_dispatch:
+    inputs:
+      gist_id:
+        description: 'The ID of the gist to update'
+        required: true
+        type: string
+      file_path:
+        description: 'Path to the markdown file (.md) with updated content'
+        required: true
+        type: string
+
+jobs:
+  update:
+    uses: serpuniversity/.github/.github/workflows/update-gist.yml@main
+    with:
+      gist_id: ${{ github.event.inputs.gist_id }}
+      file_path: ${{ github.event.inputs.file_path }}
+    secrets:
+      GH_PAT_PROFESSOR_SERP: ${{ secrets.GH_PAT_PROFESSOR_SERP }}

@@ -1,0 +1,17 @@
+name: call Create Gist
+
+on:
+  workflow_dispatch:
+    inputs:
+      file_path:
+        description: 'Path to the markdown file (.md) to create as a gist'
+        required: true
+        type: string
+
+jobs:
+  create:
+    uses: serpuniversity/.github/.github/workflows/create-gist.yml@main
+    with:
+      file_path: ${{ github.event.inputs.file_path }}
+    secrets:
+      GH_PAT_PROFESSOR_SERP: ${{ secrets.GH_PAT_PROFESSOR_SERP }}
