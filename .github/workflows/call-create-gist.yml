@@ -14,4 +14,4 @@ jobs:
     with:
       file_path: ${{ github.event.inputs.file_path }}
     secrets:
-      GH_PAT_PROFESSOR_SERP: ${{ secrets.GH_PAT_PROFESSOR_SERP }}
+      GH_PAT_PROFESSOR_SERP: ${{ secrets.DEVIN_PAT_2 }}
