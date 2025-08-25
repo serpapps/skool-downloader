@@ -1,0 +1,16 @@
+name: call Comment on Gist with Newest Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      gist_id:
+        description: 'The ID of the gist to comment on'
+        required: true
+        type: string
+
+jobs:
+  comment:
+    uses: serpapps/.github/.github/workflows/comment-on-gist-with-newest-release.yml@main
+    with:
+      gist_id: ${{ github.event.inputs.gist_id }}
+      github_token: ${{ secrets.GH_PAT }}
