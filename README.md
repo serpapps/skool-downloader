@@ -87,13 +87,24 @@ A browser extension that adds a download button to Skool (`skool.com`) classroom
 - **Enhanced Detection**: Improved video detection across all supported platforms
 - **Streamlined Experience**: Consistent download functionality regardless of page type or video platform
 
+## Frequently Asked Questions
+
+Q: Does this work on native skool videos?
+A: Yes
+
+Q: Does this work on 2+ hour long videos?
+A: Yes
+
+Q: Does this work on loom videos in Skool?
+A: Yes
+
+Q: Can you download the entire course in bulk with this?
+A: No, but that version is coming next
 
 ## Installation Instructions
 
 Each release now has its own specific installation instructions to make it easier to updgrade, or rollback, to different versions.
-
 You can find the installation instructions for the specific version in the release: 
-
 - https://github.com/serpapps/skool-downloader/releases
 
 
