@@ -122,56 +122,58 @@ You can find the installation instructions for the specific version in the relea
 </a>
 
 
+## Reviews
+
+<img src="https://raw.githubusercontent.com/serpapps/skool-downloader/refs/heads/main/reviews/ali.png" width="500px"><br>
+<img src="https://raw.githubusercontent.com/serpapps/skool-downloader/refs/heads/main/reviews/ganesh-i.png" width="500px"><br>
+<img src="https://raw.githubusercontent.com/serpapps/skool-downloader/refs/heads/main/reviews/herry-e.png" width="500px"><br>
+<img src="https://raw.githubusercontent.com/serpapps/skool-downloader/refs/heads/main/reviews/jonas-h.png" width="500px"><br>
+<img src="https://raw.githubusercontent.com/serpapps/skool-downloader/refs/heads/main/reviews/marcos-p.png" width="500px"><br>
+<img src="https://raw.githubusercontent.com/serpapps/skool-downloader/refs/heads/main/reviews/rickgick5888.png" width="500px"><br>
+<img src="https://raw.githubusercontent.com/serpapps/skool-downloader/refs/heads/main/reviews/todd-h.png" width="500px"><br>
+
+
+
+
+
 ## Permissions Justifications
 
 ### activeTab  
 We use the `activeTab` permission so the extension can interact with the currently open Skool lesson page when the user activates the extension. This is necessary to detect and process downloadable video content on the page.
 
-
 ### clipboardRead  
 The `clipboardRead` permission is used so the extension can read download links or other relevant information from the clipboard, if the user chooses to copy a video URL or lesson link for processing within the extension.
-
 
 ### contextMenus  
 We use the `contextMenus` permission to add right-click options, making it easy for users to initiate downloads or perform actions related to Skool classroom videos directly from the context menu.
 
-
 ### cookies  
 The `cookies` permission is required to access authentication tokens and session cookies for Skool.com. This allows the extension to properly access and download videos that require user authentication.
-
 
 ### downloads  
 We use the `downloads` permission to save videos from Skool classroom lessons to the user’s device for offline viewing. This is a core function of the extension.
 
-
 ### notifications  
 The `notifications` permission is used to inform the user about the progress, completion, or errors related to downloads, improving transparency and user experience.
-
 
 ### offscreen  
 The `offscreen` permission allows us to process video data or perform background tasks (such as fetching video streams) without interrupting the user’s browsing experience.
 
-
 ### scripting  
 We use the `scripting` permission to inject and execute scripts on Skool lesson pages. This is necessary to identify video elements and facilitate downloading.
-
 
 ### webNavigation  
 The `webNavigation` permission is needed to detect when the user navigates to new Skool lesson pages. This allows the extension to automatically update its state and provide download options on the correct pages.
 
 
 
-<details>
-  <summary>More</summary>
-
+## About
 
 Skool is an online community platform that combines discussion forums, online courses, and private groups into one simple, distraction-free space designed for creators, educators, and entrepreneurs who want to build engaged communities, deliver content, and grow their businesses—all.
 
 However, like many course platforms, they don't provide a way to download the videos that you (the actual users) pay for access to - or even offer an offline viewing option.
 
 So we created a way for you to download your skool.com classroom videos even if you're not technically inclined.
-
-
 
 <a href="https://www.youtube.com/watch?v=WRSzeFI_Q7g" target="_blank">
 <img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/easily-download-skool-videos-free-chrome-extension-1752429029672.jpg" width="700px">
@@ -182,5 +184,3 @@ So we created a way for you to download your skool.com classroom videos even if 
 <a href="https://www.youtube.com/watch?v=J9eetd89HZk" target="_blank">
 <img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/how-to-download-skoolcom-videos-browser-extension.jpg" width="700px">
 </a>
-
-</details> 
