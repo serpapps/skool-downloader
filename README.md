@@ -166,3 +166,6 @@ So we created a way for you to download your skool.com classroom videos even if 
 <a href="https://www.youtube.com/watch?v=J9eetd89HZk" target="_blank">
 <img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/how-to-download-skoolcom-videos-browser-extension.jpg" width="700px">
 </a>
+
+---
+
