@@ -169,3 +169,14 @@ So we created a way for you to download your skool.com classroom videos even if 
 
 ---
 
+
+
+## Related
+
+- https://github.com/serpapps/skool-downloader
+- [How to Download Skool Classroom Video Content for Offline Viewing](https://gist.github.com/devinschumacher/4e5ac5235101d89989f4d8d5ad0d09cc)
+- [How to Bulk Download All the Videos in a Skool Classroom](https://gist.github.com/devinschumacher/26be6111dddf12e6ce02d236e2bc1385)
+- [How to Download Skool Videos Using yt-dlp and a Signed .m3u8 URL](https://gist.github.com/devinschumacher/e662f0ee7cad29ab384ffddf18754653)
+- [How to Download Skool Videos with yt-dlp](https://gist.github.com/devinschumacher/9bd2da8c7b01dcc3acc367bb5f85a51f)
+- [How to Download Skool Videos (.m3u8?token URL type // HLS Stream)](https://gist.github.com/devinschumacher/4b80eb6bbefebb18594557a210c1980e)
+- [How to Download Skool.com Videos (and the Entire Course)](https://gist.github.com/devinschumacher/69615573b027b1cd5ead318739811613)
