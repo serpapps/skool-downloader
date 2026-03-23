@@ -13,26 +13,19 @@ SERP Skool Downloader is a browser extension built to download Skool videos from
 
 Skool video download has always been difficult because the platform hosts content across multiple video providers, but this extension detects them all automatically and saves everything as a standard MP4 file.
 
-## watch the video 👇
+## Watch the Video
 
 <a href="https://www.youtube.com/watch?v=YBBSkdb1YAw" target="_blank">
 <img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/how-to-download-skoolcom-course-videos-loom-vimeo-wistia-youtube-community-posts.jpg" width="700px">
 </a>
 
-## 🔗 Links
+## Links
 
-- 🎁 Get it [**here**](https://serp.ly/skool-video-downloader-extension)
-- ❓ Check FAQs [**here**](https://github.com/orgs/serpapps/discussions/categories/faq)
-- 🐛 Report bugs [**here**](https://github.com/serpapps/skool-downloader/issues)
-- 🆕 Request features [**here**](https://github.com/serpapps/skool-downloader/issues)
-- 📦 Latest release [**here**](https://github.com/serpapps/skool-downloader/releases/latest)
-
-## Resources
-
-- 💬 [**Community**](https://serp.ly/@serp/community)
-- 💌 [**Newsletter**](https://serp.ly/@serp/email)
-- 🛒 [**Shop**](https://serp.ly/@serp/store)
-- 🎓 [**Courses**](https://serp.ly/@serp/courses)
+- :rocket: Get it here: [Skool Downloader](https://serp.ly/skool-video-downloader-extension)
+- :new: Latest release: [GitHub Releases](https://github.com/serpapps/skool-downloader/releases/latest)
+- :question: Help center: [SERP Help](https://help.serp.co/en/)
+- :beetle: Report bugs: [GitHub Issues](https://github.com/serpapps/skool-downloader/issues)
+- :bulb: Request features: [Feature Requests](https://github.com/serpapps/skool-downloader/issues)
 
 ## Why Skool Downloader
 
@@ -227,48 +220,9 @@ Yes. Video processing happens entirely in your browser. Authentication uses secu
 
 The extension works with any Skool community or course you can access in your browser. If you can see and play the video, you can download it.
 
-## Permissions Justifications
+## License
 
-### activeTab
-We use the `activeTab` permission so the extension can interact with the currently open Skool lesson page when the user activates the extension. This is necessary to detect and process downloadable video content on the page.
-
-### clipboardRead
-The `clipboardRead` permission is used so the extension can read download links or other relevant information from the clipboard, if the user chooses to copy a video URL or lesson link for processing within the extension.
-
-### contextMenus
-We use the `contextMenus` permission to add right-click options, making it easy for users to initiate downloads or perform actions related to Skool classroom videos directly from the context menu.
-
-### cookies
-The `cookies` permission is required to access authentication tokens and session cookies for Skool. This allows the extension to properly access and download videos that require user authentication.
-
-### downloads
-We use the `downloads` permission to save videos from Skool classroom lessons to the user's device for offline viewing. This is a core function of the extension.
-
-### notifications
-The `notifications` permission is used to inform the user about the progress, completion, or errors related to downloads, improving transparency and user experience.
-
-### offscreen
-The `offscreen` permission allows us to process video data or perform background tasks (such as fetching video streams) without interrupting the user's browsing experience.
-
-### scripting
-We use the `scripting` permission to inject and execute scripts on Skool lesson pages. This is necessary to identify video elements and facilitate downloading.
-
-### webNavigation
-The `webNavigation` permission is needed to detect when the user navigates to new Skool lesson pages. This allows the extension to automatically update its state and provide download options on the correct pages.
-
-## Important Notes
-
-Users are responsible for ensuring they have the right to download content. This extension is intended for downloading content you own or have permission to download. Respect course creators' intellectual property. An active Skool membership is required to access course content. Quality depends on what the source platform provides. An active internet connection is required during the download process.
-
-## Keywords
-
-`skool downloader` `skool video downloader` `download skool videos` `skool mp4` `skool browser extension` `skool course downloader` `skool offline viewing`
-
-## Get It
-
-- **Start here:** [SERP Skool Downloader](https://serp.ly/skool-video-downloader-extension)
-
----
+This repository is distributed under the proprietary SERP Apps license in the [LICENSE](LICENSE) file. Review that file before copying, modifying, or redistributing any part of this project.
 
 ## Changelog
 
