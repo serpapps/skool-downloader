@@ -1,0 +1,62 @@
+<svg width="798" height="494" viewBox="0 0 798 494" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="798" height="494" fill="#1f1f1f"/>
+  <rect x="0" y="0" width="798" height="36" fill="#263238"/>
+  <rect x="0" y="36" width="798" height="28" fill="#2f3a3d"/>
+  <rect x="0" y="64" width="798" height="72" fill="#d8d8d8"/>
+  <rect x="0" y="144" width="798" height="60" fill="#3c3a3a"/>
+  <rect x="0" y="212" width="798" height="62" fill="#2c2c2c"/>
+  <rect x="0" y="279" width="798" height="43" fill="#171717"/>
+  <rect x="0" y="323" width="798" height="43" fill="#191919"/>
+  <rect x="0" y="367" width="798" height="43" fill="#1b1b1b"/>
+  <rect x="0" y="411" width="798" height="83" fill="#242424"/>
+
+  <rect x="0" y="135" width="798" height="9" fill="#0e0e0e"/>
+  <rect x="0" y="204" width="798" height="8" fill="#0e0e0e"/>
+  <rect x="0" y="274" width="798" height="5" fill="#2d2d2d"/>
+
+  <rect x="-7" y="87" width="67" height="39" rx="19.5" fill="#c7d9df"/>
+  <text x="27" y="110" text-anchor="middle" fill="#14303A" font-family="Arial, sans-serif" font-size="14">Cancel</text>
+
+  <circle cx="19" cy="173" r="13" fill="#5b5b5b"/>
+  <rect x="31" y="165" width="142" height="15" rx="7.5" fill="#d8d8d8" fill-opacity="0.95"/>
+  <text x="31" y="178" fill="#efefef" font-family="Arial, sans-serif" font-size="16">Search mail</text>
+
+  <circle cx="30" cy="301" r="10" fill="#121212" stroke="#6a6a6a" stroke-width="1.5"/>
+  <path d="M26 301L29 304L34 297" stroke="#f5f5f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M47 295L47 307" stroke="#f5f5f5" stroke-width="2" stroke-linecap="round"/>
+  <path d="M42 301H52" stroke="#f5f5f5" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="79,294 86,301 79,308" fill="#9d9d9d"/>
+  <path d="M103 293C106 296 106 306 103 309" stroke="#8c8c8c" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="120" cy="301" r="3" fill="#a5a5a5"/>
+  <circle cx="120" cy="292" r="3" fill="#a5a5a5"/>
+  <circle cx="120" cy="310" r="3" fill="#a5a5a5"/>
+
+  <circle cx="30" cy="345" r="10" fill="#121212" stroke="#6a6a6a" stroke-width="1.5"/>
+  <path d="M26 345L29 348L34 341" stroke="#f5f5f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M47 339L47 351" stroke="#f5f5f5" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="79,338 86,345 79,352" fill="#9d9d9d"/>
+  <text x="104" y="349" fill="#bcbcbc" font-family="Arial, sans-serif" font-size="14">noreply</text>
+  <text x="305" y="349" fill="#d7d7d7" font-family="Arial, sans-serif" font-size="15">Your SERP sign-in code - Enter this code to sign in:</text>
+  <text x="716" y="349" fill="#bdbdbd" font-family="Arial, sans-serif" font-size="15">895575</text>
+
+  <circle cx="30" cy="388" r="10" fill="#121212" stroke="#6a6a6a" stroke-width="1.5"/>
+  <path d="M26 388L29 391L34 384" stroke="#f5f5f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M47 382L47 394" stroke="#f5f5f5" stroke-width="2" stroke-linecap="round"/>
+  <text x="57" y="392" fill="#bcbcbc" font-family="Arial, sans-serif" font-size="14">'Chrome Web Store'</text>
+  <text x="305" y="392" fill="#cfcfcf" font-family="Arial, sans-serif" font-size="15">Chrome Web Store: Rejection notification for Downloader for</text>
+
+  <circle cx="30" cy="432" r="10" fill="#121212" stroke="#6a6a6a" stroke-width="1.5"/>
+  <path d="M26 432L29 435L34 428" stroke="#f5f5f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M47 426L47 438" stroke="#f5f5f5" stroke-width="2" stroke-linecap="round"/>
+  <text x="57" y="436" fill="#bcbcbc" font-family="Arial, sans-serif" font-size="14">Chrome Web Store</text>
+  <text x="305" y="436" fill="#cfcfcf" font-family="Arial, sans-serif" font-size="15">Chrome Web Store: Rejection notification for Downloader for</text>
+
+  <circle cx="30" cy="476" r="10" fill="#121212" stroke="#6a6a6a" stroke-width="1.5"/>
+  <path d="M26 476L29 479L34 472" stroke="#f5f5f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M47 470L47 482" stroke="#f5f5f5" stroke-width="2" stroke-linecap="round"/>
+  <text x="57" y="480" fill="#bcbcbc" font-family="Arial, sans-serif" font-size="14">Adammataafa - SERP</text>
+  <text x="305" y="480" fill="#cfcfcf" font-family="Arial, sans-serif" font-size="15">Re: Sure no worries! Let us know if you have any other issues</text>
+
+  <line x1="583" y1="194" x2="742" y2="305" stroke="#ff1d1d" stroke-width="3"/>
+  <polygon points="742,305 726,301 734,289" fill="#ff1d1d"/>
+</svg>
