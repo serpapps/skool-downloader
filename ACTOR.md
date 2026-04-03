@@ -1,71 +1,170 @@
-# Skool Video Downloader
+---
+title: Skool Video Downloader | How to Download Skool Videos for Offline Viewing
+---
 
-> Save Skool videos instantly for offline viewing.
+# Skool Video Downloader (Browser Extension)
 
-Browser extension for saving Skool classroom, community, and course videos as MP4 using your active session for offline viewing.
+A browser extension that adds a download button to Skool (`skool.com`) classroom pages to easily download videos for convenient offline viewing.
 
-## Get the Tool
+- Save entire school classrooms and course content for unlimited offline access anytime, anywhere
+- Protect your educational investment by downloading all materials before courses expire or disappear
+- Create a personal library of video lectures, assignments, and resources that you own forever
+- Never lose access to paid courses again - backup everything before platforms shut down or remove content
 
-- Product page: https://serp.ly/skool-video-downloader
+![skool-downloader](https://github.com/user-attachments/assets/0b750532-0dd0-4768-a8c4-489b4e92c1c6)
 
-## What It Does
+## 🔗 Links
 
-- Easy one-click downloads
-- Media auto detection
-- Download progress indicators
-- No watermarks
-- No ads
-- Regular Updates
-- 100% privacy-friendly
-- Zero data tracking
+- 🎁 Get it [here](https://serp.ly/skool-video-downloader-extension)
+- ❓ Check FAQs [here](https://github.com/orgs/serpapps/discussions/categories/faq)
+- 🐛 Report bugs [here](https://github.com/serpapps/skool-downloader/issues)
+- 🆕 Request features [here](https://github.com/serpapps/skool-downloader/issues)
 
-## Compatibility
+### Resources
 
-- Supported platforms: windows, mac, linux, chrome, firefox, edge, opera
-- Categories: Downloader, Course Platforms, Video Downloader
+- 💬 [Community](https://serp.ly/@serp/community)
+- 💌 [Newsletter](https://serp.ly/@serp/email)
+- 🛒 [Shop](https://serp.ly/@serp/store)
+- 🎓 [Courses](https://serp.ly/@serp/courses)
 
-## FAQ
+## Table of Contents
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Videos](#videos)
+- [Installation Instructions](#installation-instructions)
 
-### How do I download a Skool lesson with this extension?
+## Features
 
-Open the lesson, click the downloader icon, choose your quality, and keep the tab open while the segment counter completes. The MP4 will save with the community and lesson name.
+- One-click download from any video page
+- 100% privacy-friendly – no tracking or data collection
+- Auto-detect videos on the page
+- Floating download button
+- 1-on-1 support via our community
 
-### Does it work with private communities or paid cohorts?
 
-Yes. The downloader uses your existing Skool session, so any video you can watch while logged in can be saved offline.
 
-### Can I download multiple lessons at once?
+## Videos
 
-Downloads run one at a time to keep session tokens valid. Queue the next lesson after the current progress bar finishes.
+<br><br>
+<a href="https://www.youtube.com/watch?v=YBBSkdb1YAw" target="_blank">
+<img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/how-to-download-skoolcom-course-videos-loom-vimeo-wistia-youtube-community-posts.jpg" width="700px">
+</a>
 
-### Which browsers are supported?
 
-Versions are available for Chrome, Edge, Firefox, Brave, and Opera on Windows, macOS, and Linux desktops. Safari is not supported.
+## [2.0.0] - 2025-08-09
 
-### Do captions or attachments download too?
+### Added
+- Support for downloading videos across all Skool.com page types
+- Multi-platform video support for major video hosting services
+- Enhanced compatibility with various video formats
 
-Videos export as MP4 files. Captions, PDFs, or other attachments should be saved separately from within Skool.
+### Supported Platforms & Pages
 
-### What happens if I refresh the page?
+| Page Type | Wistia | Loom | Vimeo | YouTube |
+|-----------|--------|------|-------|---------|
+| Classrooms | ✅ | ✅ | ✅ | ✅ |
+| Community Posts | ✅ | ✅ | ✅ | ✅ |
+| About Pages | ✅ | ✅ | ✅ | ✅ |
 
-Progress persists. As long as the original tab remains open, the downloader resumes from the last segment and finishes the MP4.
+### What's New
+- **Universal Page Support**: Download videos from classrooms, community posts, and about pages
+- **Multi-Platform Compatibility**: Full support for Wistia, Loom, Vimeo, and YouTube videos
+- **Enhanced Detection**: Improved video detection across all supported platforms
+- **Streamlined Experience**: Consistent download functionality regardless of page type or video platform
 
-### Is my data private?
+## Frequently Asked Questions
 
-All detection and conversion happen locally. Only licence checks touch remote servers, and no viewing history or passwords are stored.
+### Q: Does this work on native skool videos?
+A: Yes
 
-### Is this legal?
+### Q: Does this work on 2+ hour long videos?
+A: Yes
 
-<p><strong>DISCLAIMER:</strong> We are not attorneys and do not offer legal advice. Laws vary by country and platform. For any legal question please consult a qualified legal professional.</p>
-<p>We give you full control over download speeds because we believe users should decide how they use their software.</p>
-<p>That said, here are a few widely accepted best practices for safe, responsible downloading:</p>
-<ol>
-<li>Only download content you created, own, or have explicit permission from the rights holder to access.</li>
-<li>Protect your personal data by respecting platform rules and rate limits with reasonable download speeds to avoid automated abuse systems putting your account at risk.</li>
-<li>Protect your privacy by using a reputable VPN for IP protection before initiating downloads — <a href="https://serp.ly/best/vpn" target="_blank" rel="noreferrer">this is the VPN we recommend &amp; use</a>.</li>
-</ol>
+### Q: Does this work on loom videos in Skool?
+A: Yes
 
-## Resources
+### Q: Can you download the entire course in bulk with this?
+A: No, but that version is coming next
 
-- GitHub repo: https://github.com/serpapps/skool-downloader
-- Product page: https://serp.ly/skool-video-downloader
+## Installation Instructions
+
+Each release now has its own specific installation instructions to make it easier to updgrade, or rollback, to different versions.
+You can find the installation instructions for the specific version in the release: 
+- https://github.com/serpapps/skool-downloader/releases
+
+
+### How to Use
+
+1. Visit the skool.com page where you want to download the video ('refresh' the page if needed)
+2. Click the extension icon in your browser
+3. Wait a second or two for the video to load (Click the video on the page if needed) 
+4. Click "Download video"
+
+## Follow along installation & setup 👇
+
+<a href="https://www.youtube.com/watch?v=YBBSkdb1YAw" target="_blank">
+<img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/how-to-download-skoolcom-course-videos-loom-vimeo-wistia-youtube-community-posts.jpg" width="700px">
+</a>
+
+
+## Reviews
+
+<img src="https://raw.githubusercontent.com/serpapps/skool-downloader/refs/heads/main/reviews/ali.png" width="500px"><br><br>
+<img src="https://raw.githubusercontent.com/serpapps/skool-downloader/refs/heads/main/reviews/ganesh-i.png" width="500px"><br><br>
+<img src="https://raw.githubusercontent.com/serpapps/skool-downloader/refs/heads/main/reviews/herry-e.png" width="500px"><br><br>
+<img src="https://raw.githubusercontent.com/serpapps/skool-downloader/refs/heads/main/reviews/jonas-h.png" width="500px"><br><br>
+<img src="https://raw.githubusercontent.com/serpapps/skool-downloader/refs/heads/main/reviews/marcos-p.png" width="500px"><br><br>
+<img src="https://raw.githubusercontent.com/serpapps/skool-downloader/refs/heads/main/reviews/rickgick5888.png" width="500px"><br><br>
+<img src="https://raw.githubusercontent.com/serpapps/skool-downloader/refs/heads/main/reviews/todd-h.png" width="500px"><br><br>
+
+
+## Permissions Justifications
+
+### activeTab  
+We use the `activeTab` permission so the extension can interact with the currently open Skool lesson page when the user activates the extension. This is necessary to detect and process downloadable video content on the page.
+
+### clipboardRead  
+The `clipboardRead` permission is used so the extension can read download links or other relevant information from the clipboard, if the user chooses to copy a video URL or lesson link for processing within the extension.
+
+### contextMenus  
+We use the `contextMenus` permission to add right-click options, making it easy for users to initiate downloads or perform actions related to Skool classroom videos directly from the context menu.
+
+### cookies  
+The `cookies` permission is required to access authentication tokens and session cookies for Skool.com. This allows the extension to properly access and download videos that require user authentication.
+
+### downloads  
+We use the `downloads` permission to save videos from Skool classroom lessons to the user’s device for offline viewing. This is a core function of the extension.
+
+### notifications  
+The `notifications` permission is used to inform the user about the progress, completion, or errors related to downloads, improving transparency and user experience.
+
+### offscreen  
+The `offscreen` permission allows us to process video data or perform background tasks (such as fetching video streams) without interrupting the user’s browsing experience.
+
+### scripting  
+We use the `scripting` permission to inject and execute scripts on Skool lesson pages. This is necessary to identify video elements and facilitate downloading.
+
+### webNavigation  
+The `webNavigation` permission is needed to detect when the user navigates to new Skool lesson pages. This allows the extension to automatically update its state and provide download options on the correct pages.
+
+
+
+## About
+
+Skool is an online community platform that combines discussion forums, online courses, and private groups into one simple, distraction-free space designed for creators, educators, and entrepreneurs who want to build engaged communities, deliver content, and grow their businesses—all.
+
+However, like many course platforms, they don't provide a way to download the videos that you (the actual users) pay for access to - or even offer an offline viewing option.
+
+So we created a way for you to download your skool.com classroom videos even if you're not technically inclined.
+
+<a href="https://www.youtube.com/watch?v=WRSzeFI_Q7g" target="_blank">
+<img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/easily-download-skool-videos-free-chrome-extension-1752429029672.jpg" width="700px">
+</a>
+
+<br><br>
+
+<a href="https://www.youtube.com/watch?v=J9eetd89HZk" target="_blank">
+<img src="https://raw.githubusercontent.com/devinschumacher/uploads/refs/heads/main/images/how-to-download-skoolcom-videos-browser-extension.jpg" width="700px">
+</a>
+
+---
