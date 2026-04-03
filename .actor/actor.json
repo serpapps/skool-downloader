@@ -4,7 +4,7 @@
   "description": "Browser extension for saving Skool classroom, community, and course videos as MP4 using your active session for offline viewing.",
   "input": "./INPUT_SCHEMA.json",
   "name": "skool-video-downloader",
-  "readme": "../README.md",
+  "readme": "../ACTOR.md",
   "title": "Skool Video Downloader",
   "version": "0.0"
 }
