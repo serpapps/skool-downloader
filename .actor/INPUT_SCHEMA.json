@@ -1,0 +1,15 @@
+{
+  "description": "This actor currently exposes a listing-first browser-extension surface. Runtime scraping input is not finalized yet, so the public input schema documents the current status rather than a finalized run contract.",
+  "properties": {
+    "listingNotice": {
+      "default": "No runtime input is required yet. See the README and product page for the current extension workflow.",
+      "description": "Optional informational field only. This actor currently serves as the public listing surface for the browser extension and does not yet expose a finalized runtime API contract.",
+      "editor": "textfield",
+      "title": "Listing notice",
+      "type": "string"
+    }
+  },
+  "schemaVersion": 1,
+  "title": "Skool Video Downloader input",
+  "type": "object"
+}
