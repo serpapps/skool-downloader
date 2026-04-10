@@ -1,0 +1,24 @@
+{
+    "name": "serpapps/skool-downloader",
+    "type": "library",
+    "description": "Download videos from your skool.com classroom and backup your hard work",
+    "keywords": [
+        "skool-downloader",
+        "skool-video-downloader",
+        "browser-extension",
+        "course-video-downloader",
+        "community-video-downloader"
+    ],
+    "homepage": "https://github.com/serpapps/skool-downloader",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "SERP Apps",
+            "homepage": "https://github.com/serpapps",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    }
+}
