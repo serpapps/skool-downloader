@@ -1,0 +1,15 @@
+{
+  "name": "@serpapps/skool-downloader",
+  "version": "1.0.0",
+  "description": "Download content from Skool communities",
+  "keywords": ["skool", "downloader", "automation"],
+  "homepage": "https://github.com/serpapps/skool-downloader#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/serpapps/skool-downloader.git"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
