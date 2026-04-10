@@ -1,5 +1,5 @@
 {
-  "name": "@serpapps/skool-downloader",
+  "name": "skool-video-downloader",
   "version": "1.0.0",
   "description": "Download content from Skool communities",
   "keywords": ["skool", "downloader", "automation"],
