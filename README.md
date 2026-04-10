@@ -13,6 +13,14 @@ SERP Skool Downloader is a browser extension built to download Skool videos from
 
 Skool video download has always been difficult because the platform hosts content across multiple video providers, but this extension detects them all automatically and saves everything as a standard MP4 file.
 
+
+<a href="https://dr.serp.co/" target="_blank" rel="noopener noreferrer"><img src="https://dr.serp.co/badge/serp.co?style=serp-dr-v3" alt="Verified DR 78 for serp.co" width="200" height="50"></a>
+
+![badge](https://embeds.serp.co/launched-on-serp.png)
+
+
+
+
 ## Watch the Video
 
 <a href="https://www.youtube.com/watch?v=YBBSkdb1YAw" target="_blank">
