@@ -29,7 +29,7 @@ Skool video download has always been difficult because the platform hosts conten
 
 ## Links
 
-- :rocket: Get it here: [Skool Downloader](https://serp.ly/skool-video-downloader-extension)
+- :rocket: Get it here: [Skool Downloader](https://serp.ly/skool-video-downloader-extension?via=github)
 - :new: Latest release: [GitHub Releases](https://github.com/serpapps/skool-downloader/releases/latest)
 - :question: Help center: [SERP Help](https://help.serp.co/en/)
 - :beetle: Report bugs: [GitHub Issues](https://github.com/serpapps/skool-downloader/issues)
@@ -72,7 +72,7 @@ SERP Skool Downloader was purpose-built for Skool so a single extension covers L
 
 ## How It Works
 
-1. **Install** — Add SERP Skool Downloader to your browser from the [product page](https://serp.ly/skool-video-downloader-extension), or download the latest version from [GitHub Releases](https://github.com/serpapps/skool-downloader/releases/latest) and load it manually
+1. **Install** — Add SERP Skool Downloader to your browser from the [product page](https://serp.ly/skool-video-downloader-extension?via=github), or download the latest version from [GitHub Releases](https://github.com/serpapps/skool-downloader/releases/latest) and load it manually
 2. **Open a Skool page** — Navigate to any classroom lesson, community post, or course module that contains a video
 3. **Start the video** — Press play so the extension can identify the video source and available qualities
 4. **Save as MP4** — Click the extension icon in your toolbar, pick your preferred resolution, and download. The file saves directly to your computer.
@@ -140,7 +140,7 @@ It was designed from the ground up for Skool, so it never misses a video regardl
 
 ## Trial & Pricing
 
-3 free downloads are included — no credit card required. Sign in with your email, verify with a one-time code, and your trial is ready immediately. Upgrade to a license for unlimited downloads at the [product page](https://serp.ly/skool-video-downloader-extension).
+3 free downloads are included — no credit card required. Sign in with your email, verify with a one-time code, and your trial is ready immediately. Upgrade to a license for unlimited downloads at the [product page](https://serp.ly/skool-video-downloader-extension?via=github).
 
 - Works on Chrome, Edge, Brave, Opera, Firefox, Whale, and Yandex
 - Secure one-time-passcode sign-in — no passwords stored
