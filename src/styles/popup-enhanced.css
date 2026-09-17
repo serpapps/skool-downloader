@@ -1,0 +1,436 @@
+﻿/* Dark theme and activation UI overrides for Skool Downloader popup */
+
+/* Base theme */
+body {
+  background: var(--bg-dark) !important;
+  color: var(--text-primary) !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  width: 400px;
+  min-height: 200px;
+  padding: 16px;
+  background: var(--bg-dark);
+  color: var(--text-primary);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.header h1, .header h2 {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+/* Top-right help icon button */
+.help-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--brand-accent);
+  background: var(--bg-darker);
+  color: var(--brand-accent);
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.help-btn:hover { background: var(--brand-accent); color: var(--text-primary); }
+
+/* Quick help banner (dark) */
+.help-text-display { background: var(--bg-darker) !important; border: 1px solid var(--border-dark) !important; color: var(--text-primary) !important; }
+.help-text-content { color: var(--text-subtle) !important; }
+
+.quick-help-banner {
+  margin: 0 0 12px 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border-dark);
+  background: var(--bg-darker);
+}
+
+.quick-help-heading {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.quick-help-text {
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--text-subtle);
+}
+
+/* Activation section */
+.activation-section {
+  padding: 20px !important;
+  background: var(--bg-dark) !important;
+  border: 1px solid var(--border-dark) !important;
+  border-radius: 6px;
+}
+
+.activation-title { color: var(--brand-accent); font-size: 18px; margin: 0 0 6px 0; text-align: center; }
+.activation-subtitle { color: var(--text-subtle); font-size: 14px; margin: 0 0 16px 0; text-align: center; }
+
+.activation-section label { display: block; color: var(--text-primary); font-size: 14px; margin-bottom: 6px; }
+.activation-section input {
+  width: 100%;
+  padding: 10px;
+  background: var(--bg-darker) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--input-border) !important;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+
+.activation-section input:focus { outline: none; border-color: var(--brand-accent) !important; box-shadow: 0 0 0 2px rgba(94, 53, 177, 0.2); }
+
+.activate-btn {
+  width: 100%;
+  padding: 12px;
+  background: var(--brand-accent) !important;
+  color: var(--text-primary) !important;
+  border: none !important;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-bottom: 10px;
+}
+
+.activate-btn:hover:not(:disabled) { background: var(--brand-accent-hover) !important; }
+.activate-btn:disabled { background: var(--bg-darker); cursor: not-allowed; }
+
+/* Status banners (success/info under activation) */
+.activation-status { margin-top: 10px; }
+.status-stack { display: grid; gap: 8px; }
+.status-banner { padding: 10px; border-radius: 4px; border: 1px solid transparent; text-align: center; font-weight: 500; }
+.status-banner.success { background: rgba(76,175,80,0.12); border-color: var(--success); color: var(--success); }
+.status-banner.info { background: rgba(33,150,243,0.12); border-color: var(--info); color: var(--info); }
+
+/* Back-compat for existing .status classes used by popup-enhanced.js */
+.status { padding: 10px; border-radius: 4px; margin: 10px 0; text-align: center; font-size: 14px; font-weight: 500; }
+.status.success { background: rgba(76,175,80,0.12); color: var(--success); border: 1px solid var(--success); }
+.status.error { background: rgba(244,67,54,0.12); color: var(--error); border: 1px solid var(--error); }
+.status.info { background: rgba(33,150,243,0.12); color: var(--info); border: 1px solid var(--info); }
+.status.loading { background: var(--bg-darker); color: var(--text-subtle); border: 1px dashed var(--border-dark); }
+
+/* Circle-style no-video guidance card */
+#error {
+  margin: 10px 0 14px 0;
+  padding: 0;
+  border: none !important;
+  background: transparent !important;
+}
+
+#error .error-message {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border-dark);
+  background: var(--bg-darker);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.45;
+  text-align: center;
+}
+
+#error .status-text {
+  display: inline;
+}
+
+#error .status-refresh-btn {
+  margin-left: 10px;
+  padding: 3px 9px;
+  border-radius: 6px;
+  border: 1px solid var(--light-border);
+  background: var(--light-bg);
+  color: #111;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#error .status-refresh-btn:hover {
+  background: #f3f6ff;
+}
+
+/* Free trial banner */
+.trial-banner {
+  margin: 10px 0 14px 0;
+  padding: 9px 12px;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, #f5c151 30%, var(--border-dark));
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, #f5c151 5%, var(--bg-darker)),
+    color-mix(in srgb, #f5c151 3%, var(--bg-darker))
+  );
+  color: #f5c151;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.trial-banner-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.trial-banner-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  color: #f5c151;
+}
+
+.trial-banner-icon svg {
+  width: 12px;
+  height: 12px;
+  display: block;
+}
+
+.trial-banner-upgrade {
+  color: var(--brand-accent);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+.trial-banner-upgrade:hover {
+  color: color-mix(in srgb, var(--brand-accent) 85%, white 15%);
+}
+
+/* Buy key link */
+.buy-key-link { display: inline-flex; align-items: center; justify-content: center; gap: 6px; width: 100%; text-align: center; font-size: 15px; font-weight: 700; color: var(--brand-accent); text-decoration: none; margin-top: 12px; }
+.buy-key-link:hover { text-decoration: underline; }
+
+/* Ensure generic panels stay dark */
+.status,
+.video-info,
+.quality-section,
+.url-input-section,
+.help-content,
+.batch-progress {
+  background: var(--bg-darker) !important;
+  border-color: var(--border-dark) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Ensure quality label contrasts on dark background */
+.quality-section label { color: var(--text-primary) !important; }
+
+/* Align quality select focus state with brand accent */
+.quality-select:focus { border-color: var(--brand-accent) !important; box-shadow: 0 0 0 2px rgba(94,53,177,0.2) !important; }
+
+/* Selects and buttons in main content */
+.quality-select { background: var(--bg-darker) !important; color: var(--text-primary) !important; border: 1px solid var(--input-border) !important; }
+.download-btn {
+  background: var(--brand-accent) !important;
+  color: var(--text-primary) !important;
+  border: none !important;
+  border-radius: 9px !important;
+  box-shadow: none !important;
+  transform: none !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  min-height: 44px;
+  margin-top: 4px;
+}
+.download-btn:hover:not(:disabled) { background: var(--brand-accent-hover) !important; box-shadow: none !important; transform: none !important; }
+.download-btn:active:not(:disabled),
+.download-btn:focus { box-shadow: none !important; transform: none !important; outline: none !important; border: none !important; }
+.download-btn .btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  margin-right: 2px;
+  opacity: 0.95;
+}
+.download-btn .btn-icon svg { width: 16px; height: 16px; display: block; }
+.download-btn .btn-text { font-size: inherit; font-weight: inherit; }
+
+/* Remove any separator lines beneath the button area */
+.footer { border-top: none !important; }
+
+/* YouTube URL card (dark) */
+.youtube-url-section { background: var(--bg-darker) !important; border: 1px solid var(--border-dark) !important; color: var(--text-primary) !important; }
+.url-label { color: var(--text-subtle) !important; }
+.url-input { background: var(--bg-dark) !important; color: var(--text-primary) !important; border: 1px solid var(--input-border) !important; }
+.url-input:focus { border-color: var(--brand-accent) !important; box-shadow: 0 0 0 2px rgba(94,53,177,0.2) !important; }
+.copy-btn { background: var(--brand-accent) !important; color: var(--text-primary) !important; border: none !important; box-shadow: none !important; transform: none !important; }
+.copy-btn:hover { background: var(--brand-accent-hover) !important; box-shadow: none !important; transform: none !important; }
+.copy-btn:active { background: var(--brand-accent-hover) !important; box-shadow: none !important; transform: none !important; }
+.copy-btn.copied { background: var(--success) !important; color: var(--text-primary) !important; }
+.yt-dlp-commands { border-top: 1px solid var(--border-dark) !important; }
+.yt-dlp-btn { background: var(--brand-accent) !important; color: var(--text-primary) !important; border: none !important; box-shadow: none !important; transform: none !important; }
+.yt-dlp-btn:hover { background: var(--brand-accent-hover) !important; box-shadow: none !important; transform: none !important; }
+.yt-dlp-btn:active { background: var(--brand-accent-hover) !important; box-shadow: none !important; transform: none !important; }
+.yt-dlp-btn.copied { background: var(--success) !important; color: var(--text-primary) !important; }
+
+/* Embed-detected notice (dark styling) */
+.embed-detected { background: var(--bg-darker) !important; border: 1px solid var(--border-dark) !important; }
+.embed-icon { color: var(--success) !important; }
+.embed-text { color: var(--text-subtle) !important; }
+
+/* Video preview card (dark) */
+.video-card { background: var(--bg-darker) !important; border: 1px solid var(--border-dark) !important; box-shadow: 0 2px 12px rgba(0,0,0,0.25) !important; }
+.video-card:hover { box-shadow: 0 4px 18px rgba(0,0,0,0.35) !important; transform: translateY(-1px); }
+.video-content { color: var(--text-primary) !important; }
+.video-title { color: var(--text-primary) !important; }
+.video-metadata { color: var(--text-subtle) !important; }
+.video-meta { color: var(--text-subtle) !important; }
+.video-description { color: var(--text-subtle) !important; }
+.metadata-label { color: var(--text-muted) !important; }
+.metadata-value { color: var(--text-primary) !important; }
+.video-description { background: var(--bg-dark) !important; border: 1px solid var(--border-dark) !important; }
+.video-duration-badge { background: rgba(0,0,0,0.8) !important; color: #fff !important; }
+
+/* Thumbnail placeholder (dark, polished, 16:9, shimmer) */
+.video-thumbnail-container { 
+  aspect-ratio: 16 / 9; 
+  height: auto; 
+  background: var(--bg-darker) !important; 
+  border-bottom: 1px solid var(--border-dark) !important; 
+}
+
+.thumbnail-placeholder {
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0));
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.thumbnail-placeholder::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(110deg, transparent 0%, rgba(255,255,255,0.06) 25%, transparent 50%);
+  transform: translateX(-100%);
+  animation: shimmer-dark 1.4s infinite;
+}
+
+@keyframes shimmer-dark { to { transform: translateX(100%); } }
+
+.placeholder-content { position: relative; z-index: 1; text-align: center; }
+
+/* Replace emoji with a clean play glyph */
+.placeholder-icon {
+  position: relative;
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+  font-size: 0; /* hide emoji text */
+}
+
+.placeholder-icon::after {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-style: solid;
+  border-width: 8px 0 8px 12px;
+  border-color: transparent transparent transparent rgba(255,255,255,0.85);
+}
+
+/* Subtle caption only when we explicitly mark no-thumb */
+.placeholder-text { display: none; color: var(--text-subtle) !important; font-size: 12px; margin-top: 8px; opacity: 0.9; }
+.thumbnail-placeholder.no-thumb .placeholder-text { display: block; }
+/* Update notifier banner (persistent fallback even if runtime style injection is blocked) */
+.update-notice {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, var(--brand-accent) 55%, var(--border-dark));
+  background:
+    linear-gradient(
+      120deg,
+      color-mix(in srgb, var(--brand-accent) 12%, var(--bg-darker)),
+      color-mix(in srgb, var(--brand-accent) 5%, var(--bg-darker))
+    ) !important;
+}
+
+.update-notice.hidden {
+  display: none !important;
+}
+
+.update-notice-text {
+  color: var(--text-primary);
+  font-size: 13px;
+  line-height: 1.45;
+  font-weight: 600;
+}
+
+.update-notice-actions {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.update-notice-link {
+  color: var(--brand-accent);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.update-notice-link:hover {
+  color: color-mix(in srgb, var(--brand-accent) 85%, white 15%);
+  text-decoration: underline;
+}
+
+.update-notice-dismiss {
+  margin-left: auto;
+  border: 1px solid var(--border-dark);
+  background: color-mix(in srgb, var(--bg-darker) 88%, white 12%);
+  color: var(--text-primary);
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.update-notice-dismiss:hover {
+  background: color-mix(in srgb, var(--bg-darker) 70%, white 30%);
+  border-color: color-mix(in srgb, var(--brand-accent) 45%, var(--border-dark));
+  color: var(--text-primary);
+}
+

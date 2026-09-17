@@ -1,0 +1,133 @@
+{
+  "manifest_version": 3,
+  "name": "Downloader for Skool",
+  "version": "4.0.13",
+  "description": "Download videos from Skool.com classrooms, community posts, about pages, and more. Supports downloading loom, youtube, vimeo, wistia",
+  "permissions": [
+    "downloads",
+    "activeTab",
+    "storage",
+    "tabs",
+    "scripting",
+    "offscreen",
+    "cookies",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "https://api.github.com/*",
+    "https://auth.serp.co/*",
+    "https://vimeo.com/*",
+    "https://*.vimeo.com/*",
+    "https://*.vimeocdn.com/*",
+    "https://*.cloudfront.net/*",
+    "https://unpkg.com/*",
+    "https://api.gumroad.com/*",
+    "https://player.vimeo.com/*",
+    "https://www.loom.com/*",
+    "https://*.loom.com/*",
+    "https://*.loomcdn.com/*",
+    "https://www.youtube.com/*",
+    "https://*.youtube.com/*",
+    "https://youtu.be/*",
+    "https://*.googlevideo.com/*",
+    "https://*.googleapis.com/*",
+    "https://wistia.com/*",
+    "https://*.wistia.com/*",
+    "https://wistia.net/*",
+    "https://*.wistia.net/*",
+    "https://fast.wistia.net/*",
+    "https://fast.wistia.com/*",
+    "https://www.skool.com/*",
+    "https://*.skool.com/*",
+    "https://stream.video.skool.com/*",
+    "https://*.video.skool.com/*",
+    "https://*.b-cdn.net/*"
+  ],
+  "background": {
+    "service_worker": "serp-bundles/background-service-worker.graph.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.skool.com/*",
+        "https://*.skool.com/*",
+        "https://www.loom.com/*",
+        "https://*.loom.com/*",
+        "https://vimeo.com/*",
+        "https://*.vimeo.com/*",
+        "https://www.youtube.com/*",
+        "https://*.youtube.com/*",
+        "https://youtu.be/*",
+        "https://wistia.com/*",
+        "https://*.wistia.com/*",
+        "https://wistia.net/*",
+        "https://*.wistia.net/*"
+      ],
+      "js": [
+        "serp-bundles/content-1.graph.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Downloader for Skool",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "download-manager/integration-helper.js",
+        "download-manager/download-manager.js",
+        "download-manager/download-manager-config.js",
+        "download-manager/download-manager-state.js",
+        "download-manager/download-manager-ui.js",
+        "detectors/video-detector.js",
+        "detectors/loom-detector.js",
+        "detectors/vimeo-detector.js",
+        "detectors/youtube-detector.js",
+        "detectors/wistia-detector.js",
+        "detectors/skool-detector.js",
+        "detectors/skool-detector-working.js"
+      ],
+      "matches": [
+        "https://www.skool.com/*",
+        "https://*.skool.com/*",
+        "https://www.loom.com/*",
+        "https://*.loom.com/*",
+        "https://vimeo.com/*",
+        "https://*.vimeo.com/*",
+        "https://www.youtube.com/*",
+        "https://*.youtube.com/*",
+        "https://youtu.be/*",
+        "https://wistia.com/*",
+        "https://*.wistia.com/*",
+        "https://wistia.net/*",
+        "https://*.wistia.net/*"
+      ]
+    },
+    {
+      "resources": [
+        "offscreen-faststream.html",
+        "offscreen-faststream-legacy.js",
+        "indexed-db.js"
+      ],
+      "matches": [
+        "*://*/*"
+      ]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self' https: wss:; frame-src 'self' blob:; child-src 'self' blob:; object-src 'self';"
+  }
+}

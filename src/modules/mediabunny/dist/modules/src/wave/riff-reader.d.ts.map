@@ -1,0 +1,1 @@
+{"version":3,"file":"riff-reader.d.ts","sourceRoot":"","sources":["../../../../src/wave/riff-reader.ts"],"names":[],"mappings":"AAAA;;;;;;GAMG;AAEH,OAAO,EAAE,MAAM,EAAE,MAAM,WAAW,CAAC;AAEnC,qBAAa,UAAU;IAIH,MAAM,EAAE,MAAM;IAHjC,GAAG,SAAK;IACR,YAAY,UAAQ;gBAED,MAAM,EAAE,MAAM;IAEjC,SAAS,CAAC,MAAM,EAAE,MAAM;IAOxB,OAAO;IAOP,OAAO;IAOP,OAAO;IAeP,SAAS,CAAC,MAAM,EAAE,MAAM;CAUxB"}

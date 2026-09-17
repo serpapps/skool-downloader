@@ -1,0 +1,1 @@
+export const buildIsobmffMimeType=e=>{let i=(e.hasVideo?"video/":e.hasAudio?"audio/":"application/")+(e.isQuickTime?"quicktime":"mp4");if(e.codecStrings.length>0){const s=[...new Set(e.codecStrings)];i+=`; codecs="${s.join(", ")}"`}return i};

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Downloader for Skool</title>
+    <style id="serp-auth-boot-css">#activationSection{display:none !important;} #activationSection[data-serp-auth-ui="1"]{display:block !important;}</style>
+    <script src="site-config.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/popup-enhanced.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Help text display area at the very top -->
+      <div id="helpTextDisplay" class="help-text-display hidden">
+        <div class="help-text-content">
+          <strong>Quick Tips:</strong> Open a Skool lesson or post with a video, press play on the video and then open this popup. If a video is detected, select a quality and click Download. Use Cancel to stop an active download.
+        </div>
+      </div>
+
+      <div class="header">
+        <h2>Video Downloader for Skool</h2>
+        <div class="header-right">
+          <!-- <div class="version">v2.0.0</div> -->
+          <button id="helpBtn" class="help-btn" title="Quick help" aria-label="Quick help">?</button>
+        </div>
+        <div id="authStatus" class="auth-status"></div>
+      </div>
+
+      <!-- Shown while we determine activation state (prevents auth UI flicker) -->
+      <div id="bootSplash" class="status loading">Loading</div>
+      <div id="activationSection" class="activation-section hidden"></div>
+
+      <div id="mainContent" class="hidden" style="margin-top: 20px">
+        
+
+        <div id="passwordSection" class="password-section hidden">
+          <label for="passwordInput">Video Password:</label>
+          <input
+            type="password"
+            id="passwordInput"
+            placeholder="Enter password..."
+          />
+        </div>
+
+        <div id="status" class="status">Checking current page for video...</div>
+
+        <div id="videoInfo" class="video-info hidden">
+          <div class="video-card">
+            <div class="video-thumbnail-container">
+              <img
+                id="videoThumbnail"
+                src=""
+                alt="Video thumbnail"
+                class="video-thumbnail-image hidden"
+              />
+              <div id="thumbnailPlaceholder" class="thumbnail-placeholder">
+                <div class="placeholder-content">
+                  <div class="placeholder-icon"></div>
+                  <span class="placeholder-text">No thumbnail available</span>
+                </div>
+              </div>
+              <div class="video-duration-badge" id="durationBadge"></div>
+            </div>
+            <div class="video-content">
+              <h3 id="videoTitle" class="video-title">Loading...</h3>
+              <div class="video-metadata">
+                <div class="metadata-row">
+                  <span class="metadata-label">By</span>
+                  <span class="metadata-value" id="videoOwner"></span>
+                </div>
+                <div class="metadata-row">
+                  <span class="metadata-label">Quality</span>
+                  <span class="metadata-value" id="videoResolution"></span>
+                </div>
+              </div>
+              <div class="video-description" id="videoDescription"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="youtubeUrlSection" class="youtube-url-section hidden">
+          <div class="url-container">
+            <label class="url-label">YouTube URL:</label>
+            <div class="url-input-group">
+              <input type="text" id="youtubeUrl" class="url-input" readonly />
+              <button
+                id="copyUrlBtn"
+                class="copy-btn"
+                title="Copy URL to clipboard"
+              >
+                <span class="copy-icon"></span>
+              </button>
+            </div>
+          </div>
+          <div class="yt-dlp-commands" style="margin-top: 12px">
+            <label class="url-label" style="margin-bottom: 8px"
+              >Download with yt-dlp:</label
+            >
+            <div style="display: flex; gap: 12px; justify-content: center">
+              <button
+                class="button copy-btn yt-dlp-btn"
+                id="ytDlpMacBtn"
+                style="padding: 8px 20px"
+              >
+                Copy for Mac
+              </button>
+              <button
+                class="button copy-btn yt-dlp-btn"
+                id="ytDlpWindowsBtn"
+                style="padding: 8px 20px"
+              >
+                Copy for Windows
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div id="qualitySection" class="quality-section hidden">
+          <label for="qualitySelect">Choose Quality:</label>
+          <select id="qualitySelect" class="quality-select">
+            <option value="">Loading qualities...</option>
+          </select>
+        </div>
+
+        <button id="downloadBtn" class="download-btn" disabled>
+          <span class="btn-text">Download Video</span>
+          <span class="btn-icon"></span>
+        </button>
+
+        <div id="progress" class="progress-container hidden">
+          <div id="singleProgress" class="single-progress">
+            <div class="progress-bar">
+              <div id="progressFill" class="progress-fill"></div>
+            </div>
+            <div class="progress-info">
+              <span id="progressText">0%</span>
+              <span id="progressSpeed"></span>
+            </div>
+            <button id="cancelBtn" class="cancel-btn">
+              <span class="btn-text">Cancel Download</span>
+              <span class="btn-icon"></span>
+            </button>
+          </div>
+        </div>
+
+        <div id="error" class="error hidden"></div>
+      </div>
+
+      <div class="footer">
+        <!-- <button id="settingsBtn" class="settings-btn" title="Settings">
+                  </button> -->
+      </div>
+    </div>
+
+    <script src="logger.js"></script>
+    <!-- Auth is now an ES module (loads auth/* dependencies) -->
+    <script type="module" src="auth.js"></script>
+    <!-- Defer popup init until after auth module executes -->
+    <script defer src="popup-enhanced.js"></script>
+    <!-- Overrides legacy license-key UI with OTP flow -->
+    <script defer src="auth-ui.js"></script>
+    <script defer src="trial-banner.js"></script>
+    <script defer src="update-notifier.js"></script>
+</body>
+</html>
+
+

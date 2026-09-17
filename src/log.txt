@@ -1,0 +1,1372 @@
+logger.js:137 2025-11-05T23:24:38.013Z [SKOOL-HANDLER]: VIMEO HANDLER FILE LOADED WITH FMP4 TESTING CODE
+logger.js:137 2025-11-05T23:24:38.013Z [SKOOL-HANDLER]: 🔧 UMP Parser loading...
+logger.js:137 2025-11-05T23:24:38.013Z [SKOOL-HANDLER]: ✅ UMP Parser loaded!
+logger.js:137 2025-11-05T23:24:38.013Z [SKOOL-HANDLER]: 🔧 Media Assembler loading...
+logger.js:137 2025-11-05T23:24:38.013Z [SKOOL-HANDLER]: ✅ Media Assembler ready
+logger.js:137 2025-11-05T23:24:38.013Z [SKOOL-HANDLER]: 🚀 Universal Video Downloader Background Script Starting...
+logger.js:137 2025-11-05T23:24:38.013Z [SKOOL-HANDLER]: VIMEO HANDLER CREATED - FORCE_FMP4_FORMAT: false
+logger.js:137 2025-11-05T23:24:38.014Z [SKOOL-HANDLER]: ✅ Universal background script loaded and listening for events.
+logger.js:137 2025-11-05T23:24:38.023Z [SKOOL-HANDLER]: ✅ DNR rule installed for googlevideo headers
+logger.js:137 2025-11-05T23:24:38.023Z [SKOOL-HANDLER]: ✅ DNR rule installed for youtubei headers
+logger.js:137 2025-11-05T23:24:38.023Z [SKOOL-HANDLER]: ✅ DNR rules installed for Skool video hosts (manifest + segments)
+logger.js:137 2025-11-05T23:24:38.023Z [SKOOL-HANDLER]: ✅ DNR rule installed for BunnyCDN (b-cdn.net) video hosts
+logger.js:137 2025-11-05T23:24:45.150Z [SKOOL-HANDLER]: 🔄 Handling message without action: videoDetected
+logger.js:137 2025-11-05T23:24:45.150Z [SKOOL-HANDLER]: 🎥 Video detected: Object
+logger.js:137 2025-11-05T23:24:45.150Z [SKOOL-HANDLER]: 🔄 Handling message without action: videoDetected
+logger.js:137 2025-11-05T23:24:45.150Z [SKOOL-HANDLER]: 🎥 Video detected: Object
+logger.js:137 2025-11-05T23:24:45.632Z [SKOOL-HANDLER]: 🔄 Handling message without action: videoDetected
+logger.js:137 2025-11-05T23:24:45.632Z [SKOOL-HANDLER]: 🎥 Video detected: Object
+logger.js:137 2025-11-05T23:24:46.633Z [SKOOL-HANDLER]: 📊 Processing getQueueStatus request
+logger.js:137 2025-11-05T23:24:47.109Z [SKOOL-HANDLER]: 🔄 Handling message without action: videoDetected
+logger.js:137 2025-11-05T23:24:47.109Z [SKOOL-HANDLER]: 🎥 Video detected: Object
+logger.js:137 2025-11-05T23:24:49.588Z [SKOOL-HANDLER]: ⬇️ Processing downloadVideo request with concurrent queue system
+logger.js:137 2025-11-05T23:24:49.589Z [SKOOL-HANDLER]: 🎬 Detector-provided platform: Loom
+logger.js:137 2025-11-05T23:24:49.589Z [SKOOL-HANDLER]: 🎯 Platform detection: Object
+logger.js:137 2025-11-05T23:24:49.589Z [SKOOL-HANDLER]: 🎬 Queuing Loom handler
+logger.js:137 2025-11-05T23:24:49.589Z [SKOOL-HANDLER]: 📋 Queued download: "Loom Video ae1cd3b1f6494c82acc54b16ff7f1ca8" (ID: download_1_1762385089589)
+logger.js:137 2025-11-05T23:24:49.589Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 0% - Queued: Loom Video ae1cd3b1f6494c82acc54b16ff7f1ca8 ()
+logger.js:137 2025-11-05T23:24:49.590Z [SKOOL-HANDLER]: 📊 Queue status: 0 active, 1 queued (max: 3)
+logger.js:137 2025-11-05T23:24:49.590Z [SKOOL-HANDLER]: 🚀 Starting download: "Loom Video ae1cd3b1f6494c82acc54b16ff7f1ca8" (ID: download_1_1762385089589)
+logger.js:137 2025-11-05T23:24:49.590Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 0% - Starting: Loom Video ae1cd3b1f6494c82acc54b16ff7f1ca8 ()
+logger.js:137 2025-11-05T23:24:49.590Z [SKOOL-HANDLER]: 🔧 Restoring downloadIdAwareUtils for handler (ID: download_1_1762385089589)
+logger.js:137 2025-11-05T23:24:49.590Z [SKOOL-HANDLER]: 🎬 Starting LOOM download for: https://www.loom.com/share/ae1cd3b1f6494c82acc54b16ff7f1ca8
+logger.js:137 2025-11-05T23:24:49.590Z [SKOOL-HANDLER]: 📦 Loom download ID: download_1_1762385089589
+logger.js:137 2025-11-05T23:24:49.590Z [SKOOL-HANDLER]: 🆔 Video ID: ae1cd3b1f6494c82acc54b16ff7f1ca8
+logger.js:137 2025-11-05T23:24:49.590Z [SKOOL-HANDLER]: 🔗 Is embed URL: false
+logger.js:137 2025-11-05T23:24:49.591Z [SKOOL-HANDLER]: 🔍 callLoomGraphqlApi called with: Object
+logger.js:137 2025-11-05T23:24:49.591Z [SKOOL-HANDLER]: 📤 GraphQL request body: [{"operationName":"GetVideoSSR","variables":{"videoId":"ae1cd3b1f6494c82acc54b16ff7f1ca8","password":null},"query":"\n        query GetVideoSSR($videoId: ID!, $password: String) {\n          getVideo(id: $videoId, password: $password) {\n            __typename\n            ... on PrivateVideo {\n              id\n              status\n              message\n              __typename\n            }\n            ... on VideoPasswordMissingOrIncorrect {\n              id\n              message\n              __typename\n            }\n            ... on RegularUserVideo {\n              id\n              __typename\n              createdAt\n              description\n              download_enabled\n              folder_id\n              is_protected\n              needs_password\n              owner {\n                display_name\n                __typename\n              }\n              privacy\n              s3_id\n              name\n              video_properties {\n                duration\n                height\n                width\n              }\n            }\n          }\n        }\n"}]
+logger.js:137 2025-11-05T23:24:49.591Z [SKOOL-HANDLER]: 🌐 Making fetch request to Loom GraphQL...
+logger.js:137 2025-11-05T23:24:49.591Z [SKOOL-HANDLER]: ✅ Download queued successfully with ID: download_1_1762385089589
+logger.js:137 2025-11-05T23:24:50.315Z [SKOOL-HANDLER]: 📥 GraphQL response status: 200 
+logger.js:137 2025-11-05T23:24:50.316Z [SKOOL-HANDLER]: ✅ GraphQL response data: Array(1)
+logger.js:137 2025-11-05T23:24:50.317Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 0% - Getting download URLs... ()
+logger.js:137 2025-11-05T23:24:50.317Z [SKOOL-HANDLER]: 🔍 Getting download URLs for video ID: ae1cd3b1f6494c82acc54b16ff7f1ca8
+logger.js:137 2025-11-05T23:24:50.317Z [SKOOL-HANDLER]: 🔍 callLoomUrlApi called with: Object
+logger.js:137 2025-11-05T23:24:50.317Z [SKOOL-HANDLER]: 📤 raw-url request body: Object
+logger.js:137 2025-11-05T23:24:50.317Z [SKOOL-HANDLER]: 🌐 Making request to: https://www.loom.com/api/campaigns/sessions/ae1cd3b1f6494c82acc54b16ff7f1ca8/raw-url
+logger.js:137 2025-11-05T23:24:50.960Z [SKOOL-HANDLER]: 📥 raw-url response status: 200 
+logger.js:137 2025-11-05T23:24:50.960Z [SKOOL-HANDLER]: ✅ raw-url response: Object
+logger.js:137 2025-11-05T23:24:50.960Z [SKOOL-HANDLER]: 🔗 Raw URL result: https://luna.loom.com/id/ae1cd3b1f6494c82acc54b16ff7f1ca8/rev/75078262f3f0848fd1ec282fd8ff46cfaf8c024dd871e14be081fe6cfae425c95/resource/dash/playlistmultibitrate.mpd?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9sdW5hLmxvb20uY29tL2lkL2FlMWNkM2IxZjY0OTRjODJhY2M1NGIxNmZmN2YxY2E4L3Jldi83NTA3ODI2MmYzZjA4NDhmZDFlYzI4MmZkOGZmNDZjZmFmOGMwMjRkZDg3MWUxNGJlMDgxZmU2Y2ZhZTQyNWM5NS9yZXNvdXJjZS8qIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzYyNDcxNDkxfX19XX0_&Signature=U1Ab0tXgVuI%7Ew97r%7EQ7p6CZjPwAQyCULmQQl911RkKLnVsu84cAvPx-aYJn7bHbE95sceYhzm3wi9zdLWlf1fbDnoEAUPIMPGl4Ii9MNZx7T1D0q03Pka1-pwbhEdHNIY-Uzu4UlZrQ-nPEdL5ZxTBtIvr96babv5P2EztSFOeTq4mENRT4zaqiONMU%7EwV8JZgoDQE54YEY%7Emh%7ENM-D8DPwEKOtGOse7LusBaLqzbYXSSRb-a7J8oc%7EGASuAqV29ULeBqsftF6kuIMyejTiAlEMdtNzjOyQkyOkwNyOXzZFgE06gtqDavvLhvRms%7EcV0UdJWsQT1nMkypa5MVCC74g__&Key-Pair-Id=APKAJQIC5BGSW7XXK7FQ
+logger.js:137 2025-11-05T23:24:50.960Z [SKOOL-HANDLER]: 🔗 Final Download URL: https://luna.loom.com/id/ae1cd3b1f6494c82acc54b16ff7f1ca8/rev/75078262f3f0848fd1ec282fd8ff46cfaf8c024dd871e14be081fe6cfae425c95/resource/dash/playlistmultibitrate.mpd?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9sdW5hLmxvb20uY29tL2lkL2FlMWNkM2IxZjY0OTRjODJhY2M1NGIxNmZmN2YxY2E4L3Jldi83NTA3ODI2MmYzZjA4NDhmZDFlYzI4MmZkOGZmNDZjZmFmOGMwMjRkZDg3MWUxNGJlMDgxZmU2Y2ZhZTQyNWM5NS9yZXNvdXJjZS8qIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzYyNDcxNDkxfX19XX0_&Signature=U1Ab0tXgVuI%7Ew97r%7EQ7p6CZjPwAQyCULmQQl911RkKLnVsu84cAvPx-aYJn7bHbE95sceYhzm3wi9zdLWlf1fbDnoEAUPIMPGl4Ii9MNZx7T1D0q03Pka1-pwbhEdHNIY-Uzu4UlZrQ-nPEdL5ZxTBtIvr96babv5P2EztSFOeTq4mENRT4zaqiONMU%7EwV8JZgoDQE54YEY%7Emh%7ENM-D8DPwEKOtGOse7LusBaLqzbYXSSRb-a7J8oc%7EGASuAqV29ULeBqsftF6kuIMyejTiAlEMdtNzjOyQkyOkwNyOXzZFgE06gtqDavvLhvRms%7EcV0UdJWsQT1nMkypa5MVCC74g__&Key-Pair-Id=APKAJQIC5BGSW7XXK7FQ
+logger.js:137 2025-11-05T23:24:50.960Z [SKOOL-HANDLER]: 🔍 URL analysis: Object
+logger.js:137 2025-11-05T23:24:50.960Z [SKOOL-HANDLER]: 📺 DASH stream detected. Processing manifest...
+logger.js:137 2025-11-05T23:24:51.337Z [SKOOL-HANDLER]: 📋 MPD Manifest Content: <?xml version="1.0" encoding="UTF-8"?><!--Generated by Loom--><MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd" profiles="urn:mpeg:dash:profile:isoff-live:2011" minBufferTime="PT2S" type="static" mediaPresentationDuration="PT1766.823S"><Period id="0"><AdaptationSet id="0" contentType="audio" lang="en" segmentAlignment="true"><Representation id="0" bandwidth="128617" codecs="opus" mimeType="audio/webm" audioSamplingRate="48000"><AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/><SegmentTemplate timescale="1000000" initialization="ae1cd3b1f6494c82acc54b16ff7f1ca8-audio-init.webm" media="ae1cd3b1f6494c82acc54b16ff7f1ca8-audio-$Number$.webm" startNumber="0"><SegmentTimeline><S t="0" d="3821000"/><S t="3821000" d="360000"/><S t="4181000" d="6480000"/><S t="10661000" d="1560000"/><S t="12221000" d="4020000"/><S t="16241000" d="4020000"/><S t="20261000" d="4030000"/><S t="24291000" d="4030000"/><S t="28321000" d="4030000"/><S t="32351000" d="3990000"/><S t="36341000" d="4020000"/><S t="40361000" d="4030000"/><S t="44391000" d="4020000"/><S t="48411000" d="4020000"/><S t="52431000" d="3970000"/><S t="56401000" d="4020000"/><S t="60421000" d="4080000"/><S t="64501000" d="4080000"/><S t="68581000" d="3960000"/><S t="72541000" d="4080000"/><S t="76621000" d="3970000"/><S t="80591000" d="4020000"/><S t="84611000" d="4020000"/><S t="88631000" d="3960000"/><S t="92591000" d="5340000"/><S t="97931000" d="2770000"/><S t="100701000" d="4020000"/><S t="104721000" d="4090000"/><S t="108811000" d="4020000"/><S t="112831000" d="4030000"/><S t="116861000" d="4080000"/><S t="120941000" d="4030000"/><S t="124971000" d="4040000"/><S t="129011000" d="3970000"/><S t="132981000" d="1260000"/><S t="134241000" d="2780000"/><S t="137021000" d="4030000"/><S t="141051000" d="2290000"/><S t="143341000" d="1740000"/><S t="145081000" d="3120000"/><S t="148201000" d="900000"/><S t="149101000" d="4030000"/><S t="153131000" d="4020000"/><S t="157151000" d="4020000"/><S t="161171000" d="4020000"/><S t="165191000" d="4030000"/><S t="169221000" d="4080000"/><S t="173301000" d="3970000"/><S t="177271000" d="4080000"/><S t="181351000" d="4030000"/><S t="185381000" d="4020000"/><S t="189401000" d="4030000"/><S t="193431000" d="3970000"/><S t="197401000" d="4030000"/><S t="201431000" d="4020000"/><S t="205451000" d="4020000"/><S t="209471000" d="4080000"/><S t="213551000" d="4020000"/><S t="217571000" d="1810000"/><S t="219381000" d="2220000"/><S t="221601000" d="4020000"/><S t="225621000" d="4020000"/><S t="229641000" d="4020000"/><S t="233661000" d="4090000"/><S t="237751000" d="4020000"/><S t="241771000" d="4080000"/><S t="245851000" d="4020000"/><S t="249871000" d="4020000"/><S t="253891000" d="4030000"/><S t="257921000" d="4020000"/><S t="261941000" d="4020000"/><S t="265961000" d="4080000"/><S t="270041000" d="3960000"/><S t="274001000" d="4020000"/><S t="278021000" d="4020000"/><S t="282041000" d="4030000"/><S t="286071000" d="2540000"/><S t="288611000" d="1500000"/><S t="290111000" d="4030000"/><S t="294141000" d="3780000"/><S t="297921000" d="240000"/><S t="298161000" d="4020000"/><S t="302181000" d="4080000"/><S t="306261000" d="4080000"/><S t="310341000" d="600000"/><S t="310941000" d="3450000"/><S t="314391000" d="4020000"/><S t="318411000" d="4020000"/><S t="322431000" d="4040000"/><S t="326471000" d="4030000"/><S t="330501000" d="4100000"/><S t="334601000" d="3960000"/><S t="338561000" d="1860000"/><S t="340421000" d="2220000"/><S t="342641000" d="3960000"/><S t="346601000" d="4080000"/><S t="350681000" d="4020000"/><S t="354701000" d="4030000"/><S t="358731000" d="4030000"/><S t="362761000" d="4020000"/><S t="366781000" d="3960000"/><S t="370741000" d="4080000"/><S t="374821000" d="4020000"/><S t="378841000" d="4030000"/><S t="382871000" d="4020000"/><S t="386891000" d="4020000"/><S t="390911000" d="4020000"/><S t="394931000" d="4020000"/><S t="398951000" d="4140000"/><S t="403091000" d="4080000"/><S t="407171000" d="4020000"/><S t="411191000" d="3960000"/><S t="415151000" d="4080000"/><S t="419231000" d="3960000"/><S t="423191000" d="4090000"/><S t="427281000" d="4020000"/><S t="431301000" d="4020000"/><S t="435321000" d="4030000"/><S t="439351000" d="4020000"/><S t="443371000" d="4020000"/><S t="447391000" d="4080000"/><S t="451471000" d="4020000"/><S t="455491000" d="4020000"/><S t="459511000" d="4030000"/><S t="463541000" d="4020000"/><S t="467561000" d="4020000"/><S t="471581000" d="4030000"/><S t="475611000" d="4030000"/><S t="479641000" d="4030000"/><S t="483671000" d="4080000"/><S t="487751000" d="4020000"/><S t="491771000" d="3970000"/><S t="495741000" d="4020000"/><S t="499761000" d="4080000"/><S t="503841000" d="4020000"/><S t="507861000" d="4080000"/><S t="511941000" d="4020000"/><S t="515961000" d="4020000"/><S t="519981000" d="4020000"/><S t="524001000" d="408
+logger.js:137 2025-11-05T23:24:51.337Z [SKOOL-HANDLER]: 🔍 Parsing XML content: <?xml version="1.0" encoding="UTF-8"?><!--Generated by Loom--><MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:dash:schema:...
+logger.js:137 2025-11-05T23:24:51.338Z [SKOOL-HANDLER]: ✅ Parsed XML - Audio sets: true Video sets: true
+logger.js:137 2025-11-05T23:24:51.338Z [SKOOL-HANDLER]: ✅ Parsed MPD object: Object
+logger.js:137 2025-11-05T23:24:51.338Z [SKOOL-HANDLER]: 🔍 Extracting DASH segments from representations...
+logger.js:137 2025-11-05T23:24:51.341Z [SKOOL-HANDLER]: 🎵 Found 453 audio segments
+logger.js:137 2025-11-05T23:24:51.343Z [SKOOL-HANDLER]: 🎬 Found 446 video segments
+logger.js:137 2025-11-05T23:24:51.343Z [SKOOL-HANDLER]: 📦 Processing 453 audio + 446 video DASH segments
+logger.js:137 2025-11-05T23:24:51.343Z [SKOOL-HANDLER]: 🔽 Downloading DASH segments using FastStream approach - Audio: 453, Video: 446
+logger.js:137 2025-11-05T23:24:51.343Z [SKOOL-HANDLER]: 📦 Total segments to download: 899
+logger.js:137 2025-11-05T23:24:51.343Z [SKOOL-HANDLER]: 📦 Video segments: 446, Audio segments: 453
+logger.js:137 2025-11-05T23:24:51.343Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 0% - Preparing segment processor... ()
+logger.js:137 2025-11-05T23:24:51.344Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 1/180 (5 segments)
+logger.js:137 2025-11-05T23:25:20.323Z [SKOOL-HANDLER]: 📊 Processing getQueueStatus request
+logger.js:137 2025-11-05T23:25:36.985Z [SKOOL-HANDLER]: 📊 Processing getQueueStatus request
+logger.js:137 2025-11-05T23:25:40.778Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 0.4171301446051168% - Downloaded 5/899 DASH segments ()
+logger.js:137 2025-11-05T23:25:40.778Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 2/180 (5 segments)
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+Fetch finished loading: GET "<URL>".
+logger.js:137 2025-11-05T23:25:42.174Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 0.8342602892102337% - Downloaded 10/899 DASH segments ()
+logger.js:137 2025-11-05T23:25:42.174Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 3/180 (5 segments)
+logger.js:137 2025-11-05T23:25:44.986Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 1.2513904338153503% - Downloaded 15/899 DASH segments ()
+logger.js:137 2025-11-05T23:25:44.986Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 4/180 (5 segments)
+logger.js:137 2025-11-05T23:26:11.100Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 1.6685205784204673% - Downloaded 20/899 DASH segments ()
+logger.js:137 2025-11-05T23:26:11.101Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 5/180 (5 segments)
+logger.js:137 2025-11-05T23:26:14.198Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 2.0856507230255836% - Downloaded 25/899 DASH segments ()
+logger.js:137 2025-11-05T23:26:14.198Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 6/180 (5 segments)
+logger.js:137 2025-11-05T23:26:15.690Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 2.5027808676307006% - Downloaded 30/899 DASH segments ()
+logger.js:137 2025-11-05T23:26:15.690Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 7/180 (5 segments)
+logger.js:137 2025-11-05T23:26:25.191Z [SKOOL-HANDLER]: 📊 Processing getQueueStatus request
+logger.js:137 2025-11-05T23:26:26.934Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 2.9199110122358176% - Downloaded 35/899 DASH segments ()
+logger.js:137 2025-11-05T23:26:26.935Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 8/180 (5 segments)
+logger.js:137 2025-11-05T23:26:43.437Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 3.3370411568409346% - Downloaded 40/899 DASH segments ()
+logger.js:137 2025-11-05T23:26:43.437Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 9/180 (5 segments)
+logger.js:137 2025-11-05T23:26:45.895Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 3.754171301446051% - Downloaded 45/899 DASH segments ()
+logger.js:137 2025-11-05T23:26:45.895Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 10/180 (5 segments)
+logger.js:137 2025-11-05T23:26:47.876Z [SKOOL-HANDLER]: ✅ video segment 50/899 downloaded (3493838 bytes)
+logger.js:137 2025-11-05T23:26:47.886Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 4.171301446051167% - Downloaded 50/899 DASH segments ()
+logger.js:137 2025-11-05T23:26:47.886Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 11/180 (5 segments)
+logger.js:137 2025-11-05T23:26:49.383Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 4.588431590656285% - Downloaded 55/899 DASH segments ()
+logger.js:137 2025-11-05T23:26:49.383Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 12/180 (5 segments)
+logger.js:137 2025-11-05T23:26:50.340Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 5.005561735261401% - Downloaded 60/899 DASH segments ()
+logger.js:137 2025-11-05T23:26:50.341Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 13/180 (5 segments)
+logger.js:137 2025-11-05T23:26:51.068Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 5.422691879866519% - Downloaded 65/899 DASH segments ()
+logger.js:137 2025-11-05T23:26:51.068Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 14/180 (5 segments)
+logger.js:137 2025-11-05T23:26:51.825Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 5.839822024471635% - Downloaded 70/899 DASH segments ()
+logger.js:137 2025-11-05T23:26:51.825Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 15/180 (5 segments)
+logger.js:137 2025-11-05T23:26:52.401Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 6.256952169076752% - Downloaded 75/899 DASH segments ()
+logger.js:137 2025-11-05T23:26:52.401Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 16/180 (5 segments)
+logger.js:137 2025-11-05T23:26:53.250Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 6.674082313681869% - Downloaded 80/899 DASH segments ()
+logger.js:137 2025-11-05T23:26:53.250Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 17/180 (5 segments)
+logger.js:137 2025-11-05T23:26:54.029Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 7.091212458286985% - Downloaded 85/899 DASH segments ()
+logger.js:137 2025-11-05T23:26:54.029Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 18/180 (5 segments)
+logger.js:137 2025-11-05T23:26:54.850Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 7.508342602892102% - Downloaded 90/899 DASH segments ()
+logger.js:137 2025-11-05T23:26:54.850Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 19/180 (5 segments)
+logger.js:137 2025-11-05T23:26:55.539Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 7.925472747497219% - Downloaded 95/899 DASH segments ()
+logger.js:137 2025-11-05T23:26:55.539Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 20/180 (5 segments)
+logger.js:137 2025-11-05T23:26:56.215Z [SKOOL-HANDLER]: ✅ video segment 100/899 downloaded (2756864 bytes)
+logger.js:137 2025-11-05T23:26:56.241Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 8.342602892102335% - Downloaded 100/899 DASH segments ()
+logger.js:137 2025-11-05T23:26:56.242Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 21/180 (5 segments)
+logger.js:137 2025-11-05T23:26:57.354Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 8.759733036707452% - Downloaded 105/899 DASH segments ()
+logger.js:137 2025-11-05T23:26:57.354Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 22/180 (5 segments)
+logger.js:137 2025-11-05T23:26:58.343Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 9.17686318131257% - Downloaded 110/899 DASH segments ()
+logger.js:137 2025-11-05T23:26:58.344Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 23/180 (5 segments)
+logger.js:137 2025-11-05T23:26:59.227Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 9.593993325917687% - Downloaded 115/899 DASH segments ()
+logger.js:137 2025-11-05T23:26:59.227Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 24/180 (5 segments)
+logger.js:137 2025-11-05T23:27:00.177Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 10.011123470522802% - Downloaded 120/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:00.177Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 25/180 (5 segments)
+logger.js:137 2025-11-05T23:27:01.084Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 10.42825361512792% - Downloaded 125/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:01.085Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 26/180 (5 segments)
+logger.js:137 2025-11-05T23:27:01.885Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 10.845383759733037% - Downloaded 130/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:01.885Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 27/180 (5 segments)
+logger.js:137 2025-11-05T23:27:02.791Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 11.262513904338155% - Downloaded 135/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:02.791Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 28/180 (5 segments)
+logger.js:137 2025-11-05T23:27:03.954Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 11.67964404894327% - Downloaded 140/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:03.954Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 29/180 (5 segments)
+logger.js:137 2025-11-05T23:27:04.846Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 12.096774193548386% - Downloaded 145/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:04.846Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 30/180 (5 segments)
+logger.js:137 2025-11-05T23:27:05.699Z [SKOOL-HANDLER]: ✅ video segment 150/899 downloaded (2966704 bytes)
+logger.js:137 2025-11-05T23:27:05.732Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 12.513904338153504% - Downloaded 150/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:05.732Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 31/180 (5 segments)
+logger.js:137 2025-11-05T23:27:06.522Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 12.931034482758621% - Downloaded 155/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:06.523Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 32/180 (5 segments)
+logger.js:137 2025-11-05T23:27:07.190Z [SKOOL-HANDLER]: 📊 Processing getQueueStatus request
+logger.js:137 2025-11-05T23:27:07.460Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 13.348164627363738% - Downloaded 160/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:07.461Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 33/180 (5 segments)
+logger.js:137 2025-11-05T23:27:08.386Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 13.765294771968854% - Downloaded 165/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:08.386Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 34/180 (5 segments)
+logger.js:137 2025-11-05T23:27:09.126Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 14.18242491657397% - Downloaded 170/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:09.126Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 35/180 (5 segments)
+logger.js:137 2025-11-05T23:27:10.125Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 14.599555061179087% - Downloaded 175/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:10.125Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 36/180 (5 segments)
+logger.js:137 2025-11-05T23:27:10.960Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 15.016685205784205% - Downloaded 180/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:10.960Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 37/180 (5 segments)
+logger.js:137 2025-11-05T23:27:11.945Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 15.433815350389322% - Downloaded 185/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:11.945Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 38/180 (5 segments)
+logger.js:137 2025-11-05T23:27:12.890Z [SKOOL-HANDLER]: 📊 Processing getQueueStatus request
+logger.js:137 2025-11-05T23:27:13.268Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 15.850945494994438% - Downloaded 190/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:13.268Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 39/180 (5 segments)
+logger.js:137 2025-11-05T23:27:14.699Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 16.268075639599555% - Downloaded 195/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:14.699Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 40/180 (5 segments)
+logger.js:137 2025-11-05T23:27:15.794Z [SKOOL-HANDLER]: ✅ video segment 200/899 downloaded (2973055 bytes)
+logger.js:137 2025-11-05T23:27:15.808Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 16.68520578420467% - Downloaded 200/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:15.808Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 41/180 (5 segments)
+logger.js:137 2025-11-05T23:27:16.763Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 17.10233592880979% - Downloaded 205/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:16.764Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 42/180 (5 segments)
+logger.js:137 2025-11-05T23:27:17.597Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 17.519466073414904% - Downloaded 210/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:17.597Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 43/180 (5 segments)
+logger.js:137 2025-11-05T23:27:18.598Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 17.93659621802002% - Downloaded 215/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:18.598Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 44/180 (5 segments)
+logger.js:137 2025-11-05T23:27:19.363Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 18.35372636262514% - Downloaded 220/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:19.364Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 45/180 (5 segments)
+logger.js:137 2025-11-05T23:27:20.179Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 18.770856507230256% - Downloaded 225/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:20.180Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 46/180 (5 segments)
+logger.js:137 2025-11-05T23:27:20.814Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 19.187986651835374% - Downloaded 230/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:20.814Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 47/180 (5 segments)
+logger.js:137 2025-11-05T23:27:21.655Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 19.605116796440488% - Downloaded 235/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:21.656Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 48/180 (5 segments)
+logger.js:137 2025-11-05T23:27:22.276Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 20.022246941045605% - Downloaded 240/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:22.277Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 49/180 (5 segments)
+logger.js:137 2025-11-05T23:27:23.775Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 20.439377085650726% - Downloaded 245/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:23.775Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 50/180 (5 segments)
+logger.js:137 2025-11-05T23:27:24.726Z [SKOOL-HANDLER]: ✅ video segment 250/899 downloaded (4360756 bytes)
+logger.js:137 2025-11-05T23:27:24.750Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 20.85650723025584% - Downloaded 250/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:24.750Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 51/180 (5 segments)
+logger.js:137 2025-11-05T23:27:25.658Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 21.273637374860957% - Downloaded 255/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:25.659Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 52/180 (5 segments)
+logger.js:137 2025-11-05T23:27:26.964Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 21.690767519466075% - Downloaded 260/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:26.965Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 53/180 (5 segments)
+logger.js:137 2025-11-05T23:27:27.923Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 22.10789766407119% - Downloaded 265/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:27.923Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 54/180 (5 segments)
+logger.js:137 2025-11-05T23:27:28.994Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 22.52502780867631% - Downloaded 270/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:28.994Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 55/180 (5 segments)
+logger.js:137 2025-11-05T23:27:29.723Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 22.942157953281423% - Downloaded 275/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:29.724Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 56/180 (5 segments)
+logger.js:137 2025-11-05T23:27:30.893Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 23.35928809788654% - Downloaded 280/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:30.893Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 57/180 (5 segments)
+logger.js:137 2025-11-05T23:27:32.818Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 23.77641824249166% - Downloaded 285/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:32.819Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 58/180 (5 segments)
+logger.js:137 2025-11-05T23:27:34.313Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 24.193548387096772% - Downloaded 290/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:34.314Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 59/180 (5 segments)
+logger.js:137 2025-11-05T23:27:35.946Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 24.610678531701893% - Downloaded 295/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:35.946Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 60/180 (5 segments)
+logger.js:137 2025-11-05T23:27:37.445Z [SKOOL-HANDLER]: ✅ video segment 300/899 downloaded (7047443 bytes)
+logger.js:137 2025-11-05T23:27:37.492Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 25.027808676307007% - Downloaded 300/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:37.492Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 61/180 (5 segments)
+logger.js:137 2025-11-05T23:27:39.308Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 25.444938820912125% - Downloaded 305/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:39.308Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 62/180 (5 segments)
+logger.js:137 2025-11-05T23:27:41.105Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 25.862068965517242% - Downloaded 310/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:41.105Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 63/180 (5 segments)
+logger.js:137 2025-11-05T23:27:43.110Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 26.279199110122356% - Downloaded 315/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:43.110Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 64/180 (5 segments)
+logger.js:137 2025-11-05T23:27:45.198Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 26.696329254727477% - Downloaded 320/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:45.198Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 65/180 (5 segments)
+logger.js:137 2025-11-05T23:27:47.662Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 27.11345939933259% - Downloaded 325/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:47.662Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 66/180 (5 segments)
+logger.js:137 2025-11-05T23:27:49.780Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 27.530589543937708% - Downloaded 330/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:49.781Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 67/180 (5 segments)
+logger.js:137 2025-11-05T23:27:51.527Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 27.947719688542826% - Downloaded 335/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:51.528Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 68/180 (5 segments)
+logger.js:137 2025-11-05T23:27:53.352Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 28.36484983314794% - Downloaded 340/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:53.353Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 69/180 (5 segments)
+logger.js:137 2025-11-05T23:27:55.702Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 28.78197997775306% - Downloaded 345/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:55.702Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 70/180 (5 segments)
+logger.js:137 2025-11-05T23:27:56.350Z [SKOOL-HANDLER]: ✅ video segment 350/899 downloaded (1966721 bytes)
+logger.js:137 2025-11-05T23:27:58.104Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 29.199110122358174% - Downloaded 350/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:58.105Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 71/180 (5 segments)
+logger.js:137 2025-11-05T23:27:59.884Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 29.616240266963292% - Downloaded 355/899 DASH segments ()
+logger.js:137 2025-11-05T23:27:59.885Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 72/180 (5 segments)
+logger.js:137 2025-11-05T23:28:01.991Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 30.03337041156841% - Downloaded 360/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:01.991Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 73/180 (5 segments)
+logger.js:137 2025-11-05T23:28:03.758Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 30.450500556173527% - Downloaded 365/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:03.758Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 74/180 (5 segments)
+logger.js:137 2025-11-05T23:28:05.630Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 30.867630700778644% - Downloaded 370/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:05.630Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 75/180 (5 segments)
+logger.js:137 2025-11-05T23:28:07.182Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 31.284760845383758% - Downloaded 375/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:07.182Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 76/180 (5 segments)
+logger.js:137 2025-11-05T23:28:08.571Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 31.701890989988875% - Downloaded 380/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:08.571Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 77/180 (5 segments)
+logger.js:137 2025-11-05T23:28:09.687Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 32.11902113459399% - Downloaded 385/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:09.687Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 78/180 (5 segments)
+logger.js:137 2025-11-05T23:28:10.510Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 32.53615127919911% - Downloaded 390/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:10.510Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 79/180 (5 segments)
+logger.js:137 2025-11-05T23:28:11.780Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 32.95328142380423% - Downloaded 395/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:11.780Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 80/180 (5 segments)
+logger.js:137 2025-11-05T23:28:12.669Z [SKOOL-HANDLER]: ✅ video segment 400/899 downloaded (3803953 bytes)
+logger.js:137 2025-11-05T23:28:12.680Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 33.37041156840934% - Downloaded 400/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:12.681Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 81/180 (5 segments)
+logger.js:137 2025-11-05T23:28:13.676Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 33.78754171301446% - Downloaded 405/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:13.676Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 82/180 (5 segments)
+logger.js:137 2025-11-05T23:28:14.615Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 34.20467185761958% - Downloaded 410/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:14.616Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 83/180 (5 segments)
+logger.js:137 2025-11-05T23:28:15.657Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 34.62180200222469% - Downloaded 415/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:15.657Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 84/180 (5 segments)
+logger.js:137 2025-11-05T23:28:16.634Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 35.03893214682981% - Downloaded 420/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:16.634Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 85/180 (5 segments)
+logger.js:137 2025-11-05T23:28:17.719Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 35.45606229143493% - Downloaded 425/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:17.719Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 86/180 (5 segments)
+logger.js:137 2025-11-05T23:28:18.775Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 35.87319243604004% - Downloaded 430/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:18.775Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 87/180 (5 segments)
+logger.js:137 2025-11-05T23:28:19.617Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 36.29032258064516% - Downloaded 435/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:19.618Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 88/180 (5 segments)
+logger.js:137 2025-11-05T23:28:20.503Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 36.70745272525028% - Downloaded 440/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:20.504Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 89/180 (5 segments)
+logger.js:137 2025-11-05T23:28:21.498Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 37.124582869855395% - Downloaded 445/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:21.499Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 90/180 (5 segments)
+logger.js:137 2025-11-05T23:28:21.611Z [SKOOL-HANDLER]: ✅ audio segment 450/899 downloaded (88486 bytes)
+logger.js:137 2025-11-05T23:28:21.614Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 37.54171301446051% - Downloaded 450/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:21.614Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 91/180 (5 segments)
+logger.js:137 2025-11-05T23:28:21.737Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 37.95884315906563% - Downloaded 455/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:21.737Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 92/180 (5 segments)
+logger.js:137 2025-11-05T23:28:21.842Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 38.37597330367075% - Downloaded 460/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:21.842Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 93/180 (5 segments)
+logger.js:137 2025-11-05T23:28:21.976Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 38.793103448275865% - Downloaded 465/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:21.977Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 94/180 (5 segments)
+logger.js:137 2025-11-05T23:28:22.081Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 39.210233592880975% - Downloaded 470/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:22.081Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 95/180 (5 segments)
+logger.js:137 2025-11-05T23:28:22.219Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 39.62736373748609% - Downloaded 475/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:22.219Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 96/180 (5 segments)
+logger.js:137 2025-11-05T23:28:22.317Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 40.04449388209121% - Downloaded 480/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:22.318Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 97/180 (5 segments)
+logger.js:137 2025-11-05T23:28:22.455Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 40.46162402669633% - Downloaded 485/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:22.456Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 98/180 (5 segments)
+logger.js:137 2025-11-05T23:28:22.546Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 40.87875417130145% - Downloaded 490/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:22.546Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 99/180 (5 segments)
+logger.js:137 2025-11-05T23:28:22.669Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 41.29588431590657% - Downloaded 495/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:22.669Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 100/180 (5 segments)
+logger.js:137 2025-11-05T23:28:22.760Z [SKOOL-HANDLER]: ✅ audio segment 500/899 downloaded (63779 bytes)
+logger.js:137 2025-11-05T23:28:22.774Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 41.71301446051168% - Downloaded 500/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:22.774Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 101/180 (5 segments)
+logger.js:137 2025-11-05T23:28:22.896Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 42.1301446051168% - Downloaded 505/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:22.896Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 102/180 (5 segments)
+logger.js:137 2025-11-05T23:28:23.004Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 42.547274749721915% - Downloaded 510/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:23.004Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 103/180 (5 segments)
+logger.js:137 2025-11-05T23:28:23.166Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 42.96440489432703% - Downloaded 515/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:23.166Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 104/180 (5 segments)
+logger.js:137 2025-11-05T23:28:23.266Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 43.38153503893215% - Downloaded 520/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:23.266Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 105/180 (5 segments)
+logger.js:137 2025-11-05T23:28:23.389Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 43.79866518353726% - Downloaded 525/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:23.389Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 106/180 (5 segments)
+logger.js:137 2025-11-05T23:28:23.490Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 44.21579532814238% - Downloaded 530/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:23.490Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 107/180 (5 segments)
+logger.js:137 2025-11-05T23:28:23.583Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 44.632925472747495% - Downloaded 535/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:23.583Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 108/180 (5 segments)
+logger.js:137 2025-11-05T23:28:23.690Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 45.05005561735262% - Downloaded 540/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:23.690Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 109/180 (5 segments)
+logger.js:137 2025-11-05T23:28:23.781Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 45.46718576195774% - Downloaded 545/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:23.782Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 110/180 (5 segments)
+logger.js:137 2025-11-05T23:28:23.878Z [SKOOL-HANDLER]: ✅ audio segment 550/899 downloaded (64745 bytes)
+logger.js:137 2025-11-05T23:28:23.879Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 45.88431590656285% - Downloaded 550/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:23.879Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 111/180 (5 segments)
+logger.js:137 2025-11-05T23:28:23.991Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 46.301446051167964% - Downloaded 555/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:23.991Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 112/180 (5 segments)
+logger.js:137 2025-11-05T23:28:24.100Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 46.71857619577308% - Downloaded 560/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:24.100Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 113/180 (5 segments)
+logger.js:137 2025-11-05T23:28:24.219Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 47.1357063403782% - Downloaded 565/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:24.219Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 114/180 (5 segments)
+logger.js:137 2025-11-05T23:28:24.323Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 47.55283648498332% - Downloaded 570/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:24.323Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 115/180 (5 segments)
+logger.js:137 2025-11-05T23:28:24.414Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 47.96996662958843% - Downloaded 575/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:24.414Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 116/180 (5 segments)
+logger.js:137 2025-11-05T23:28:24.508Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 48.387096774193544% - Downloaded 580/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:24.509Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 117/180 (5 segments)
+logger.js:137 2025-11-05T23:28:24.622Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 48.80422691879866% - Downloaded 585/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:24.622Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 118/180 (5 segments)
+logger.js:137 2025-11-05T23:28:24.729Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 49.22135706340379% - Downloaded 590/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:24.729Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 119/180 (5 segments)
+logger.js:137 2025-11-05T23:28:24.822Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 49.638487208008904% - Downloaded 595/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:24.823Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 120/180 (5 segments)
+logger.js:137 2025-11-05T23:28:24.917Z [SKOOL-HANDLER]: ✅ audio segment 600/899 downloaded (64745 bytes)
+logger.js:137 2025-11-05T23:28:24.919Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 50.055617352614014% - Downloaded 600/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:24.919Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 121/180 (5 segments)
+logger.js:137 2025-11-05T23:28:25.019Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 50.47274749721913% - Downloaded 605/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:25.019Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 122/180 (5 segments)
+logger.js:137 2025-11-05T23:28:25.128Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 50.88987764182425% - Downloaded 610/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:25.129Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 123/180 (5 segments)
+logger.js:137 2025-11-05T23:28:25.275Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 51.30700778642937% - Downloaded 615/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:25.275Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 124/180 (5 segments)
+logger.js:137 2025-11-05T23:28:25.371Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 51.724137931034484% - Downloaded 620/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:25.372Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 125/180 (5 segments)
+logger.js:137 2025-11-05T23:28:25.492Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 52.141268075639594% - Downloaded 625/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:25.492Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 126/180 (5 segments)
+logger.js:137 2025-11-05T23:28:25.583Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 52.55839822024471% - Downloaded 630/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:25.584Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 127/180 (5 segments)
+logger.js:137 2025-11-05T23:28:25.684Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 52.975528364849836% - Downloaded 635/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:25.685Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 128/180 (5 segments)
+logger.js:137 2025-11-05T23:28:25.846Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 53.392658509454954% - Downloaded 640/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:25.846Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 129/180 (5 segments)
+logger.js:137 2025-11-05T23:28:25.976Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 53.80978865406007% - Downloaded 645/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:25.977Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 130/180 (5 segments)
+logger.js:137 2025-11-05T23:28:26.076Z [SKOOL-HANDLER]: ✅ audio segment 650/899 downloaded (64745 bytes)
+logger.js:137 2025-11-05T23:28:26.085Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 54.22691879866518% - Downloaded 650/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:26.085Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 131/180 (5 segments)
+logger.js:137 2025-11-05T23:28:26.207Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 54.6440489432703% - Downloaded 655/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:26.207Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 132/180 (5 segments)
+logger.js:137 2025-11-05T23:28:26.309Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 55.061179087875416% - Downloaded 660/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:26.310Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 133/180 (5 segments)
+logger.js:137 2025-11-05T23:28:26.430Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 55.478309232480534% - Downloaded 665/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:26.430Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 134/180 (5 segments)
+logger.js:137 2025-11-05T23:28:26.606Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 55.89543937708565% - Downloaded 670/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:26.607Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 135/180 (5 segments)
+logger.js:137 2025-11-05T23:28:26.776Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 56.31256952169076% - Downloaded 675/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:26.777Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 136/180 (5 segments)
+logger.js:137 2025-11-05T23:28:26.865Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 56.72969966629588% - Downloaded 680/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:26.866Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 137/180 (5 segments)
+logger.js:137 2025-11-05T23:28:26.943Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 57.146829810901004% - Downloaded 685/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:26.943Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 138/180 (5 segments)
+logger.js:137 2025-11-05T23:28:27.022Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 57.56395995550612% - Downloaded 690/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:27.023Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 139/180 (5 segments)
+logger.js:137 2025-11-05T23:28:27.107Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 57.98109010011124% - Downloaded 695/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:27.107Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 140/180 (5 segments)
+logger.js:137 2025-11-05T23:28:27.231Z [SKOOL-HANDLER]: ✅ audio segment 700/899 downloaded (64745 bytes)
+logger.js:137 2025-11-05T23:28:27.232Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 58.39822024471635% - Downloaded 700/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:27.232Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 141/180 (5 segments)
+logger.js:137 2025-11-05T23:28:27.351Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 58.815350389321466% - Downloaded 705/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:27.351Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 142/180 (5 segments)
+logger.js:137 2025-11-05T23:28:27.438Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 59.232480533926584% - Downloaded 710/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:27.438Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 143/180 (5 segments)
+logger.js:137 2025-11-05T23:28:27.533Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 59.6496106785317% - Downloaded 715/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:27.534Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 144/180 (5 segments)
+logger.js:137 2025-11-05T23:28:27.638Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 60.06674082313682% - Downloaded 720/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:27.638Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 145/180 (5 segments)
+logger.js:137 2025-11-05T23:28:27.729Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 60.48387096774193% - Downloaded 725/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:27.729Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 146/180 (5 segments)
+logger.js:137 2025-11-05T23:28:27.816Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 60.90100111234705% - Downloaded 730/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:27.816Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 147/180 (5 segments)
+logger.js:137 2025-11-05T23:28:27.904Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 61.31813125695217% - Downloaded 735/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:27.904Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 148/180 (5 segments)
+logger.js:137 2025-11-05T23:28:27.985Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 61.73526140155729% - Downloaded 740/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:27.985Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 149/180 (5 segments)
+logger.js:137 2025-11-05T23:28:28.073Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 62.152391546162406% - Downloaded 745/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:28.073Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 150/180 (5 segments)
+logger.js:137 2025-11-05T23:28:28.169Z [SKOOL-HANDLER]: ✅ audio segment 750/899 downloaded (64745 bytes)
+logger.js:137 2025-11-05T23:28:28.171Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 62.569521690767516% - Downloaded 750/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:28.171Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 151/180 (5 segments)
+logger.js:137 2025-11-05T23:28:28.264Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 62.98665183537263% - Downloaded 755/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:28.264Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 152/180 (5 segments)
+logger.js:137 2025-11-05T23:28:28.373Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 63.40378197997775% - Downloaded 760/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:28.374Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 153/180 (5 segments)
+logger.js:137 2025-11-05T23:28:28.452Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 63.82091212458287% - Downloaded 765/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:28.452Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 154/180 (5 segments)
+logger.js:137 2025-11-05T23:28:28.541Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 64.23804226918799% - Downloaded 770/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:28.542Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 155/180 (5 segments)
+logger.js:137 2025-11-05T23:28:28.631Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 64.6551724137931% - Downloaded 775/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:28.631Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 156/180 (5 segments)
+logger.js:137 2025-11-05T23:28:28.722Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 65.07230255839822% - Downloaded 780/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:28.723Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 157/180 (5 segments)
+logger.js:137 2025-11-05T23:28:28.828Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 65.48943270300333% - Downloaded 785/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:28.829Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 158/180 (5 segments)
+logger.js:137 2025-11-05T23:28:28.914Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 65.90656284760846% - Downloaded 790/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:28.915Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 159/180 (5 segments)
+logger.js:137 2025-11-05T23:28:29.007Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 66.32369299221358% - Downloaded 795/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:29.008Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 160/180 (5 segments)
+logger.js:137 2025-11-05T23:28:29.102Z [SKOOL-HANDLER]: ✅ audio segment 800/899 downloaded (64745 bytes)
+logger.js:137 2025-11-05T23:28:29.104Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 66.74082313681868% - Downloaded 800/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:29.105Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 161/180 (5 segments)
+logger.js:137 2025-11-05T23:28:29.229Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 67.1579532814238% - Downloaded 805/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:29.229Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 162/180 (5 segments)
+logger.js:137 2025-11-05T23:28:29.352Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 67.57508342602893% - Downloaded 810/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:29.353Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 163/180 (5 segments)
+logger.js:137 2025-11-05T23:28:29.466Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 67.99221357063404% - Downloaded 815/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:29.466Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 164/180 (5 segments)
+logger.js:137 2025-11-05T23:28:29.562Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 68.40934371523916% - Downloaded 820/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:29.563Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 165/180 (5 segments)
+logger.js:137 2025-11-05T23:28:29.668Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 68.82647385984427% - Downloaded 825/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:29.669Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 166/180 (5 segments)
+logger.js:137 2025-11-05T23:28:29.768Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 69.24360400444938% - Downloaded 830/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:29.768Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 167/180 (5 segments)
+logger.js:137 2025-11-05T23:28:29.857Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 69.6607341490545% - Downloaded 835/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:29.857Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 168/180 (5 segments)
+logger.js:137 2025-11-05T23:28:29.939Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 70.07786429365962% - Downloaded 840/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:29.940Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 169/180 (5 segments)
+logger.js:137 2025-11-05T23:28:30.029Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 70.49499443826474% - Downloaded 845/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:30.029Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 170/180 (5 segments)
+logger.js:137 2025-11-05T23:28:30.114Z [SKOOL-HANDLER]: ✅ audio segment 850/899 downloaded (65711 bytes)
+logger.js:137 2025-11-05T23:28:30.118Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 70.91212458286986% - Downloaded 850/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:30.118Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 171/180 (5 segments)
+logger.js:137 2025-11-05T23:28:30.213Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 71.32925472747498% - Downloaded 855/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:30.213Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 172/180 (5 segments)
+logger.js:137 2025-11-05T23:28:30.323Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 71.74638487208009% - Downloaded 860/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:30.323Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 173/180 (5 segments)
+logger.js:137 2025-11-05T23:28:30.439Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 72.16351501668521% - Downloaded 865/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:30.439Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 174/180 (5 segments)
+logger.js:137 2025-11-05T23:28:30.560Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 72.58064516129032% - Downloaded 870/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:30.561Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 175/180 (5 segments)
+logger.js:137 2025-11-05T23:28:30.669Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 72.99777530589544% - Downloaded 875/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:30.669Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 176/180 (5 segments)
+logger.js:137 2025-11-05T23:28:30.788Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 73.41490545050056% - Downloaded 880/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:30.788Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 177/180 (5 segments)
+logger.js:137 2025-11-05T23:28:30.888Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 73.83203559510567% - Downloaded 885/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:30.888Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 178/180 (5 segments)
+logger.js:137 2025-11-05T23:28:30.981Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 74.24916573971079% - Downloaded 890/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:30.981Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 179/180 (5 segments)
+logger.js:137 2025-11-05T23:28:31.092Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 74.66629588431591% - Downloaded 895/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:31.092Z [SKOOL-HANDLER]: 📦 Downloading DASH batch 180/180 (4 segments)
+logger.js:137 2025-11-05T23:28:31.178Z [SKOOL-HANDLER]: ✅ audio segment 899/899 downloaded (11615 bytes)
+logger.js:137 2025-11-05T23:28:31.179Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 75% - Downloaded 899/899 DASH segments ()
+logger.js:137 2025-11-05T23:28:31.179Z [SKOOL-HANDLER]: ✅ All 899 DASH segments downloaded and stored
+logger.js:137 2025-11-05T23:28:31.179Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 85% - Processing DASH segments... ()
+logger.js:137 2025-11-05T23:28:31.179Z [SKOOL-HANDLER]: 📋 Queued processing task (queue length: 1)
+logger.js:137 2025-11-05T23:28:31.179Z [SKOOL-HANDLER]: ⚙️ Starting offscreen processing (0 remaining)
+logger.js:137 2025-11-05T23:28:31.180Z [SKOOL-HANDLER]: 📄 Creating offscreen document...
+logger.js:137 2025-11-05T23:28:31.204Z [SKOOL-HANDLER]: ✅ Offscreen (FastStream) document is ready.
+logger.js:137 2025-11-05T23:28:31.204Z [SKOOL-HANDLER]: ✅ Offscreen document is ready.
+logger.js:137 2025-11-05T23:28:31.205Z [SKOOL-HANDLER]: 🎬 Sending DASH segments to FastStream with parameters: {requestId: 'bded49f3-da58-41c2-bf6f-e897486c5efc', fileName: 'ai_engineering_meet_-_september_11_2025.mp4', totalSegments: 899, videoCount: 446, audioCount: 453, …}
+logger.js:137 2025-11-05T23:28:31.205Z [SKOOL-HANDLER]: ✅ New offscreen document created, waiting for ready signal...
+logger.js:137 2025-11-05T23:28:43.591Z [SKOOL-HANDLER]: 🔍 OFFSCREEN: 📱 FASTSTREAM OFFSCREEN: ❌ MEDIABUNNY: DASH2MP4 pipeline failed: Cannot read properties of null (reading 'trackEntries')
+logger.js:137 2025-11-05T23:28:54.541Z [SKOOL-HANDLER]: 🔍 OFFSCREEN: 📱 FASTSTREAM OFFSCREEN: ✅ MUXING: completed: created 1644.61 MB MP4
+logger.js:137 2025-11-05T23:28:54.541Z [SKOOL-HANDLER]: 🔍 OFFSCREEN: 📱 FASTSTREAM OFFSCREEN: ✅ MEDIABUNNY: mux completed: single MP4 1644.61 MB
+logger.js:137 2025-11-05T23:28:54.542Z [SKOOL-HANDLER]: ✅ Download completion notification received: ai_engineering_meet_-_september_11_2025.mp4
+logger.js:137 2025-11-05T23:28:54.542Z [SKOOL-HANDLER]: 🎉 [Background] Sending download completion: Download completed: ai_engineering_meet_-_september_11_2025.mp4
+logger.js:137 2025-11-05T23:28:54.542Z [SKOOL-HANDLER]: 🔍 OFFSCREEN: 📱 FASTSTREAM OFFSCREEN: 🔍 ✅ FastStream A/V merge completed successfully
+logger.js:137 2025-11-05T23:28:54.542Z [SKOOL-HANDLER]: ✅ HLS segments merge completed: bded49f3-da58-41c2-bf6f-e897486c5efc
+logger.js:137 2025-11-05T23:28:54.543Z [SKOOL-HANDLER]: 🎉 [Background] Sending download completion: Download completed!
+logger.js:137 2025-11-05T23:28:54.543Z [SKOOL-HANDLER]: ✅ Offscreen DASH processing completed
+logger.js:137 2025-11-05T23:28:54.543Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 100% - Download complete! Check your downloads folder. ()
+logger.js:137 2025-11-05T23:28:54.543Z [SKOOL-HANDLER]: ✅ Offscreen processing completed
+logger.js:137 2025-11-05T23:28:54.543Z [SKOOL-HANDLER]: 📄 Processing queue empty, scheduling offscreen teardown
+logger.js:137 2025-11-05T23:28:54.543Z [SKOOL-HANDLER]: 📊 Loom HLS handler finished, activeDownloads: 2, keeping offscreen open for Chrome download
+logger.js:137 2025-11-05T23:28:54.544Z [SKOOL-HANDLER]: 📥 Loom processing completed, awaiting Chrome download completion
+logger.js:137 2025-11-05T23:28:54.544Z [SKOOL-HANDLER]: 📊 Loom handler finished, activeDownloads: 2, keeping offscreen open for Chrome download
+logger.js:137 2025-11-05T23:28:54.544Z [SKOOL-HANDLER]: ✅ Download completed: "Loom Video ae1cd3b1f6494c82acc54b16ff7f1ca8" (ID: download_1_1762385089589)
+logger.js:137 2025-11-05T23:28:54.544Z [SKOOL-HANDLER]: 🔄 Restored original utils for handler after completion (ID: download_1_1762385089589)
+logger.js:137 2025-11-05T23:28:54.544Z [SKOOL-HANDLER]: 🧹 Cleaning up download: "Loom Video ae1cd3b1f6494c82acc54b16ff7f1ca8" (ID: download_1_1762385089589)
+logger.js:137 2025-11-05T23:28:54.544Z [SKOOL-HANDLER]: 📊 [Progress] download_1_1762385089589: 100% - Completed: Loom Video ae1cd3b1f6494c82acc54b16ff7f1ca8 ()
+logger.js:137 2025-11-05T23:28:54.544Z [SKOOL-HANDLER]: ✅ Final cleanup completed for: "Loom Video ae1cd3b1f6494c82acc54b16ff7f1ca8" (ID: download_1_1762385089589)
+logger.js:137 2025-11-05T23:28:54.544Z [SKOOL-HANDLER]: 📊 Queue status: 0 active, 0 queued (max: 3)
+logger.js:137 2025-11-05T23:29:24.373Z [SKOOL-HANDLER]: ✅ Offscreen document closed

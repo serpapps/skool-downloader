@@ -1,0 +1,180 @@
+/*!
+ * Copyright (c) 2025-present, Vanilagy and contributors
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
+
+import { SECOND_TO_MICROSECOND_FACTOR } from './misc';
+
+export const PLACEHOLDER_DATA = new Uint8Array(0);
+
+/**
+ * The type of a packet. Key packets can be decoded without previous packets, while delta packets depend on previous
+ * packets.
+ * @public
+ */
+export type PacketType = 'key' | 'delta';
+
+/**
+ * Represents an encoded chunk of media. Mainly used as an expressive wrapper around WebCodecs API's EncodedVideoChunk
+ * and EncodedAudioChunk, but can also be used standalone.
+ * @public
+ */
+export class EncodedPacket {
+	/**
+	 * The actual byte length of the data in this packet. This field is useful for metadata-only packets where the
+	 * `data` field contains no bytes.
+	 */
+	readonly byteLength: number;
+
+	constructor(
+		/** The encoded data of this packet. */
+		public readonly data: Uint8Array,
+		/** The type of this packet. */
+		public readonly type: PacketType,
+		/**
+		 * The presentation timestamp of this packet in seconds. May be negative. Samples with negative end timestamps
+		 * should not be presented.
+		 */
+		public readonly timestamp: number,
+		/** The duration of this packet in seconds. */
+		public readonly duration: number,
+		/**
+		 * The sequence number indicates the decode order of the packets. Packet A  must be decoded before packet B if A
+		 * has a lower sequence number than B. If two packets have the same sequence number, they are the same packet.
+		 * Otherwise, sequence numbers are arbitrary and are not guaranteed to have any meaning besides their relative
+		 * ordering. Negative sequence numbers mean the sequence number is undefined.
+		 */
+		public readonly sequenceNumber = -1,
+		byteLength?: number,
+	) {
+		if (data === PLACEHOLDER_DATA && byteLength === undefined) {
+			throw new Error(
+				'Internal error: byteLength must be explicitly provided when constructing metadata-only packets.',
+			);
+		}
+
+		if (byteLength === undefined) {
+			byteLength = data.byteLength;
+		}
+
+		if (!(data instanceof Uint8Array)) {
+			throw new TypeError('data must be a Uint8Array.');
+		}
+		if (type !== 'key' && type !== 'delta') {
+			throw new TypeError('type must be either "key" or "delta".');
+		}
+		if (!Number.isFinite(timestamp)) {
+			throw new TypeError('timestamp must be a number.');
+		}
+		if (!Number.isFinite(duration) || duration < 0) {
+			throw new TypeError('duration must be a non-negative number.');
+		}
+		if (!Number.isFinite(sequenceNumber)) {
+			throw new TypeError('sequenceNumber must be a number.');
+		}
+		if (!Number.isInteger(byteLength) || byteLength < 0) {
+			throw new TypeError('byteLength must be a non-negative integer.');
+		}
+
+		this.byteLength = byteLength;
+	}
+
+	/** If this packet is a metadata-only packet. Metadata-only packets don't contain their packet data. */
+	get isMetadataOnly() {
+		return this.data === PLACEHOLDER_DATA;
+	}
+
+	/** The timestamp of this packet in microseconds. */
+	get microsecondTimestamp() {
+		return Math.trunc(SECOND_TO_MICROSECOND_FACTOR * this.timestamp);
+	}
+
+	/** The duration of this packet in microseconds. */
+	get microsecondDuration() {
+		return Math.trunc(SECOND_TO_MICROSECOND_FACTOR * this.duration);
+	}
+
+	/** Converts this packet to an EncodedVideoChunk for use with the WebCodecs API. */
+	toEncodedVideoChunk() {
+		if (this.isMetadataOnly) {
+			throw new TypeError('Metadata-only packets cannot be converted to a video chunk.');
+		}
+		if (typeof EncodedVideoChunk === 'undefined') {
+			throw new Error('Your browser does not support EncodedVideoChunk.');
+		}
+
+		return new EncodedVideoChunk({
+			data: this.data,
+			type: this.type,
+			timestamp: this.microsecondTimestamp,
+			duration: this.microsecondDuration,
+		});
+	}
+
+	/** Converts this packet to an EncodedAudioChunk for use with the WebCodecs API. */
+	toEncodedAudioChunk() {
+		if (this.isMetadataOnly) {
+			throw new TypeError('Metadata-only packets cannot be converted to an audio chunk.');
+		}
+		if (typeof EncodedAudioChunk === 'undefined') {
+			throw new Error('Your browser does not support EncodedAudioChunk.');
+		}
+
+		return new EncodedAudioChunk({
+			data: this.data,
+			type: this.type,
+			timestamp: this.microsecondTimestamp,
+			duration: this.microsecondDuration,
+		});
+	}
+
+	/**
+	 * Creates an EncodedPacket from an EncodedVideoChunk or EncodedAudioChunk. This method is useful for converting
+	 * chunks from the WebCodecs API to EncodedPackets.
+	 */
+	static fromEncodedChunk(chunk: EncodedVideoChunk | EncodedAudioChunk): EncodedPacket {
+		if (!(chunk instanceof EncodedVideoChunk || chunk instanceof EncodedAudioChunk)) {
+			throw new TypeError('chunk must be an EncodedVideoChunk or EncodedAudioChunk.');
+		}
+
+		const data = new Uint8Array(chunk.byteLength);
+		chunk.copyTo(data);
+
+		return new EncodedPacket(
+			data,
+			chunk.type as PacketType,
+			chunk.timestamp / 1e6,
+			(chunk.duration ?? 0) / 1e6,
+		);
+	}
+
+	/** Clones this packet while optionally updating timing information. */
+	clone(options?: {
+		/** The timestamp of the cloned packet in seconds. */
+		timestamp?: number;
+		/** The duration of the cloned packet in seconds. */
+		duration?: number;
+	}): EncodedPacket {
+		if (options !== undefined && (typeof options !== 'object' || options === null)) {
+			throw new TypeError('options, when provided, must be an object.');
+		}
+		if (options?.timestamp !== undefined && !Number.isFinite(options.timestamp)) {
+			throw new TypeError('options.timestamp, when provided, must be a number.');
+		}
+		if (options?.duration !== undefined && !Number.isFinite(options.duration)) {
+			throw new TypeError('options.duration, when provided, must be a number.');
+		}
+
+		return new EncodedPacket(
+			this.data,
+			this.type,
+			options?.timestamp ?? this.timestamp,
+			options?.duration ?? this.duration,
+			this.sequenceNumber,
+			this.byteLength,
+		);
+	}
+}
