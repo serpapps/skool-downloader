@@ -1,0 +1,1 @@
+export const buildMatroskaMimeType=e=>{let s=(e.hasVideo?"video/":e.hasAudio?"audio/":"application/")+(e.isWebM?"webm":"x-matroska");if(e.codecStrings.length>0){const t=[...new Set(e.codecStrings.filter(Boolean))];s+=`; codecs="${t.join(", ")}"`}return s};
