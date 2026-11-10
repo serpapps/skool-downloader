@@ -60,7 +60,7 @@ SERP Skool Downloader was purpose-built for Skool so a single extension covers L
 - **Floating download button** — One-click download from any video page
 - **Auto-detect videos** — Videos are identified on the page automatically
 - **Privacy-friendly** — No tracking or data collection
-- **Cross-browser support** — Works on Chrome, Edge, Brave, Opera, Whale, Yandex, and Firefox
+- **Cross-browser support** — Works on Chrome, Edge, Brave, Opera, Whale, and Yandex
 
 ### Supported Platforms & Pages
 
@@ -87,7 +87,7 @@ SERP Skool Downloader was purpose-built for Skool so a single extension covers L
 
 Downloading from Skool is tricky because videos come from different providers and many use streaming formats that cannot be saved with a right-click. This tutorial walks you through how to save Skool course videos as MP4 for offline study.
 
-**What you need:** A supported browser — Chrome, Edge, Brave, Firefox, or Opera — an active Skool community or course membership, and an internet connection.
+**What you need:** A supported browser — Chrome, Edge, Brave, Opera, Whale, or Yandex — an active Skool community or course membership, and an internet connection.
 
 **Step 1 — Install the extension.** Get SERP Skool Downloader from your browser's extension store. Alternatively, download the latest release from [GitHub](https://github.com/serpapps/skool-downloader/releases/latest) and load it manually in your browser's extension settings. See full [installation instructions](#installation-instructions) below.
 
@@ -140,9 +140,9 @@ It was designed from the ground up for Skool, so it never misses a video regardl
 
 ## Trial & Pricing
 
-3 free downloads are included — no credit card required. Sign in with your email, verify with a one-time code, and your trial is ready immediately. Upgrade to a license for unlimited downloads at the [product page](https://serp.ly/skool-video-downloader-extension?via=github).
+3 free downloads a week are included — no credit card required. Sign in with your email, verify with a one-time code, and your trial is ready immediately. Upgrade to a subscription for unlimited downloads at the [product page](https://serp.ly/skool-video-downloader-extension?via=github).
 
-- Works on Chrome, Edge, Brave, Opera, Firefox, Whale, and Yandex
+- Works on Chrome, Edge, Brave, Opera, Whale, and Yandex
 - Secure one-time-passcode sign-in — no passwords stored
 - All processing happens locally in your browser — no video data sent to external servers
 - Automatic update notifications via GitHub releases
@@ -194,7 +194,7 @@ Yes.
 
 ### Q: Can you download the entire course in bulk with this?
 
-No, but that version is coming next.
+No. To back up a whole course at once, use [Skool Bulk Downloader](https://serp.ly/skool-bulk-downloader?via=github).
 
 ### Q: What quality options are available?
 
@@ -210,11 +210,11 @@ Yes. If you have access to a Skool classroom or course and can play the video in
 
 ### Q: How many free downloads do I get?
 
-You get 3 free trial downloads after signing in with your email. After that, purchase a license for unlimited downloads.
+You get 3 free trial downloads a week after signing in with your email. For unlimited downloads, get a subscription.
 
 ### Q: Does this work on Firefox?
 
-Yes — supports Chrome, Edge, Brave, Opera, Whale, Yandex, and Firefox.
+No. It supports Chrome, Edge, Brave, Opera, Whale, and Yandex on Windows, macOS, and Linux. Firefox, Safari, and mobile browsers are not supported.
 
 ### Q: Why isn't the extension finding my video?
 
